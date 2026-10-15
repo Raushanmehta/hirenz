@@ -1,0 +1,1505 @@
+{
+  "Hirenz": {
+    "templateComponents": {
+      "template-1": {
+        "shared": {
+          "navbar": "HirenzNavbar1",
+          "footer": "HirenzFooter1"
+        },
+        "pages": {
+          "home": {
+            "components": [
+              {
+                "key": "hero",
+                "component": "HirenzHero1"
+              },
+              {
+                "key": "about",
+                "component": "HirenzAbout1"
+              },
+              {
+                "key": "service",
+                "component": "HirenzService1"
+              },
+              {
+                "key": "experties",
+                "component": "HirenzExperties1"
+              },
+              {
+                "key": "process",
+                "component": "HirenzProcess1"
+              },
+              {
+                "key": "testimonial",
+                "component": "HirenzTestimonial1"
+              },
+              {
+                "key": "blog",
+                "component": "HirenzBlog1"
+              }
+            ]
+          },
+          "about": {
+            "components": [
+              {
+                "key": "pageTopSection",
+                "component": "HirenzPageTopSection1"
+              },
+              {
+                "key": "about",
+                "component": "HirenzAbout1"
+              },
+              {
+                "key": "process",
+                "component": "HirenzProcess1"
+              },
+              {
+                "key": "testimonial",
+                "component": "HirenzTestimonial1"
+              }
+            ]
+          },
+          "services": {
+            "components": [
+              {
+                "key": "pageTopSection",
+                "component": "HirenzPageTopSection1"
+              },
+              {
+                "key": "service",
+                "component": "HirenzService1"
+              },
+              {
+                "key": "experties",
+                "component": "HirenzExperties1"
+              }
+            ]
+          },
+          "serviceDetail": {
+            "components": [
+              {
+                "key": "pageTopSection",
+                "component": "HirenzPageTopSection1"
+              },
+              {
+                "key": "serviceDetail",
+                "component": "HirenzServiceDetail1"
+              },
+              {
+                "key": "experties",
+                "component": "HirenzExperties1"
+              }
+            ]
+          },
+          "jobs": {
+            "components": [
+              {
+                "key": "pageTopSection",
+                "component": "HirenzPageTopSection1"
+              },
+              {
+                "key": "jobs",
+                "component": "HirenzJobs1"
+              }
+            ]
+          },
+          "applyNow": {
+            "components": [
+              {
+                "key": "pageTopSection",
+                "component": "HirenzPageTopSection1"
+              },
+              {
+                "key": "applyNow",
+                "component": "HirenzApplyNow1"
+              }
+            ]
+          },
+          "blog": {
+            "components": [
+              {
+                "key": "pageTopSection",
+                "component": "HirenzPageTopSection1"
+              },
+              {
+                "key": "blog",
+                "component": "HirenzBlog1"
+              }
+            ]
+          },
+          "blogDetail": {
+            "components": [
+              {
+                "key": "pageTopSection",
+                "component": "HirenzPageTopSection1"
+              },
+              {
+                "key": "blogDetail",
+                "component": "HirenzBlogDetail1"
+              }
+            ]
+          },
+          "testimonials": {
+            "components": [
+              {
+                "key": "pageTopSection",
+                "component": "HirenzPageTopSection1"
+              },
+              {
+                "key": "testimonial",
+                "component": "HirenzTestimonial1"
+              }
+            ]
+          },
+          "contact": {
+            "components": [
+              {
+                "key": "pageTopSection",
+                "component": "HirenzPageTopSection1"
+              },
+              {
+                "key": "contact",
+                "component": "HirenzContact1"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "sections": {
+      "navbar": {
+        "variants": {
+          "HirenzNavbar1": {
+            "logo": {
+              "src": "/images/logo.png",
+              "alt": "Hirenz Recruitment & HR Consultancy",
+              "width": 160,
+              "height": 45
+            },
+            "navLinks": [
+              {
+                "id": "home",
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "id": "about",
+                "label": "About Us",
+                "href": "/about"
+              },
+              {
+                "id": "services",
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "id": "jobs",
+                "label": "Jobs",
+                "href": "/jobs"
+              },
+              {
+                "id": "testimonials",
+                "label": "Testimonials",
+                "href": "/testimonials"
+              },
+              {
+                "id": "blog",
+                "label": "Blog",
+                "href": "/blog"
+              },
+              {
+                "id": "contact",
+                "label": "Contact Us",
+                "href": "/contact"
+              }
+            ],
+            "cta": {
+              "label": "Apply Now",
+              "href": "/apply-now"
+            }
+          }
+        }
+      },
+      "footer": {
+        "variants": {
+          "HirenzFooter1": {
+            "logo": {
+              "src": "/images/logo-white.png",
+              "alt": "Hirenz",
+              "width": 160,
+              "height": 45
+            },
+            "description": "Hirenz is a premier recruitment and human resource consultancy firm delivering tailored talent acquisition and executive search solutions worldwide.",
+            "phone": "+1 000000000",
+            "phoneHref": "tel:+1000000000",
+            "email": "info@xyz.com",
+            "emailHref": "mailto:info@xyz.com",
+            "address": "3170 Rosewood Lane Unit 200 , Beverly Hills, CA 90210",
+            "hours": "Mon - Fri: 9:00 AM - 6:00 PM",
+            "socialLinks": [
+              {
+                "icon": "facebook",
+                "href": "https://facebook.com",
+                "label": "Facebook"
+              },
+              {
+                "icon": "instagram",
+                "href": "https://instagram.com",
+                "label": "Instagram"
+              },
+              {
+                "icon": "linkedin",
+                "href": "https://linkedin.com",
+                "label": "LinkedIn"
+              },
+              {
+                "icon": "youtube",
+                "href": "https://youtube.com",
+                "label": "YouTube"
+              },
+              {
+                "icon": "x",
+                "href": "https://x.com",
+                "label": "X"
+              }
+            ],
+            "quickLinks": [
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "About Us",
+                "href": "/about"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Jobs",
+                "href": "/jobs"
+              },
+              {
+                "label": "Testimonials",
+                "href": "/testimonials"
+              },
+              {
+                "label": "Blog",
+                "href": "/blog"
+              },
+              {
+                "label": "Contact Us",
+                "href": "/contact"
+              }
+            ],
+            "servicesLinks": [
+              {
+                "label": "Permanent Recruitment",
+                "href": "/services/permanent-recruitment"
+              },
+              {
+                "label": "Contract Staffing",
+                "href": "/services/contract-staffing"
+              },
+              {
+                "label": "Executive Search",
+                "href": "/services/executive-search"
+              },
+              {
+                "label": "RPO Solutions",
+                "href": "/services/rpo-solutions"
+              },
+              {
+                "label": "HR Consulting",
+                "href": "/services/hr-consulting"
+              },
+              {
+                "label": "Payroll Management",
+                "href": "/services/payroll-management"
+              }
+            ],
+            "copyright": "© 2026 Hirenz. All Rights Reserved. Powered by Lestow"
+          }
+        }
+      },
+      "pageTopSection": {
+        "variants": {
+          "HirenzPageTopSection1": {
+            "bgImage": "/images/top-banner.jpg",
+            "title": "Page Title",
+            "breadcrumbs": [
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Current Page"
+              }
+            ]
+          }
+        }
+      },
+      "hero": {
+        "variants": {
+          "HirenzHero1": {
+            "titlePart1": "Find Your Next",
+            "titlePart2": "Top Talent With",
+            "highlight": "Hirenz",
+            "description": "Connecting skilled professionals with forward-thinking companies. We help businesses build stronger teams and individuals create brighter futures.",
+            "primaryCta": {
+              "label": "Find Talent",
+              "href": "/services"
+            },
+            "secondaryCta": {
+              "label": "Hire Now",
+              "href": "/contact"
+            },
+            "image": "/images/hero-banner.png",
+            "trustedBadge": {
+              "trustedBy": "Trusted by",
+              "heading": "Leading Companies",
+              "rating": "4.9/5 Rating",
+              "avatars": [
+                {
+                  "name": "Alex Morgan",
+                  "src": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&h=120&q=80"
+                },
+                {
+                  "name": "David Chen",
+                  "src": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&h=120&q=80"
+                },
+                {
+                  "name": "Sarah Jenkins",
+                  "src": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&h=120&q=80"
+                },
+                {
+                  "name": "Michael Ross",
+                  "src": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&h=120&q=80"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "about": {
+        "variants": {
+          "HirenzAbout1": {
+            "badge": "ABOUT HIRENZ",
+            "headline": "Discover Our Story, Core Values, And The Dedicated Team",
+            "titlePart1": "Discover Our Story,",
+            "titlePart2": "Core Values, And The",
+            "highlight": "Dedicated Team",
+            "description": "Hirenz is a forward-thinking HR consultancy committed to bridging the gap between exceptional talent and ambitious organizations. Our focus is on building meaningful careers and stronger businesses.",
+            "image": {
+              "src": "/images/about-banner.png",
+              "alt": "Hirenz team collaborating on talent solutions"
+            },
+            "experienceYears": 15,
+            "stats": [
+              {
+                "value": "15+",
+                "label": "Years of Experience",
+                "icon": "experience"
+              },
+              {
+                "value": "10k+",
+                "label": "Successful Placements",
+                "icon": "placements"
+              },
+              {
+                "value": "500+",
+                "label": "Corporate Clients",
+                "icon": "corporateClients"
+              }
+            ],
+            "cta": {
+              "label": "Learn More About Us",
+              "href": "/about"
+            }
+          }
+        }
+      },
+      "service": {
+        "variants": {
+          "HirenzService1": {
+            "badge": "END TO END HR SOLUTIONS",
+            "headline": "Comprehensive Recruitment Solutions",
+            "titlePart1": "Comprehensive",
+            "highlight": "Recruitment Solutions",
+            "description": "We provide tailored HR and recruitment solutions to help businesses find, hire and retain the right talent to achieve their goals.",
+            "servicesList": [
+              {
+                "id": "permanent-recruitment",
+                "title": "Permanent Recruitment",
+                "description": "Find the right professionals for long-term growth.",
+                "icon": "permanentRecruitment",
+                "href": "/services/permanent-recruitment",
+                "activeService": "permanent-recruitment",
+                "heroImage": "/images/service-detail-main.png",
+                "overviewBadge": "PERMANENT RECRUITMENT",
+                "overviewTitle": "Permanent Recruitment Solutions",
+                "overviewTitlePart1": "Permanent",
+                "overviewHighlight": "Recruitment",
+                "overviewParagraphs": [
+                  "Our Permanent Recruitment service helps organizations identify and hire exceptional professionals who can drive growth, innovation, and long-term success. We combine industry expertise, deep market insights, and a structured search process to connect you with top-tier professionals who align with your business goals and culture.",
+                  "From assessing candidate potential to ensuring the right cultural fit, we manage the entire recruitment process with discretion, precision, and a focus on delivering measurable results."
+                ],
+                "approachBadge": "OUR APPROACH",
+                "approachTitle": "Service Center",
+                "approachTitlePart1": "Service",
+                "approachHighlight": "Center",
+                "approachDescription": "We follow a structured and research-driven approach to ensure you get the right permanent talent. Our process includes market mapping, candidate assessment, and thorough evaluation to deliver professionals who can make an immediate impact.",
+                "features": [
+                  {
+                    "title": "Strategic Talent Mapping",
+                    "description": "We identify and engage high-potential leaders through detailed market research and industry insights.",
+                    "image": "/images/service-detail-mapping.png"
+                  },
+                  {
+                    "title": "Candidate Evaluation",
+                    "description": "Our experts conduct in-depth assessments to ensure the right skills, experience, and cultural fit for your organizational roles.",
+                    "image": "/images/service-detail-evaluation.png"
+                  }
+                ]
+              },
+              {
+                "id": "contract-staffing",
+                "title": "Contract Staffing",
+                "description": "Flexible staffing solutions for dynamic business needs.",
+                "icon": "contractStaffing",
+                "href": "/services/contract-staffing",
+                "activeService": "contract-staffing",
+                "heroImage": "/images/service-detail-main.png",
+                "overviewBadge": "CONTRACT STAFFING",
+                "overviewTitle": "Flexible Contract Staffing",
+                "overviewTitlePart1": "Contract",
+                "overviewHighlight": "Staffing",
+                "overviewParagraphs": [
+                  "Our Contract Staffing solutions provide organizations with the agile talent necessary to meet fluctuating project deadlines, seasonal demands, and specialized skill requirements without expanding permanent headcount.",
+                  "We manage candidate sourcing, compliance verification, and contract payroll logistics so your core teams remain concentrated on business milestones."
+                ],
+                "approachBadge": "OUR APPROACH",
+                "approachTitle": "Agile Workforce Center",
+                "approachTitlePart1": "Agile Workforce",
+                "approachHighlight": "Center",
+                "approachDescription": "Rapid deployment of pre-vetted domain specialists backed by transparent SLAs, complete regulatory compliance, and smooth onboarding.",
+                "features": [
+                  {
+                    "title": "Rapid Deployment",
+                    "description": "Access pre-vetted contractors ready to deploy quickly across diverse tech and operations stacks.",
+                    "image": "/images/service-detail-mapping.png"
+                  },
+                  {
+                    "title": "Compliance & Management",
+                    "description": "Complete statutory adherence including provident fund, insurance, and seamless contractor billing management.",
+                    "image": "/images/service-detail-evaluation.png"
+                  }
+                ]
+              },
+              {
+                "id": "executive-search",
+                "title": "Executive Search",
+                "description": "Connect with top leadership talent for key roles.",
+                "icon": "executiveSearch",
+                "href": "/services/executive-search",
+                "activeService": "executive-search",
+                "heroImage": "/images/service-detail-main.png",
+                "overviewBadge": "EXECUTIVE SEARCH",
+                "overviewTitle": "Service Overview",
+                "overviewTitlePart1": "Service",
+                "overviewHighlight": "Overview",
+                "overviewParagraphs": [
+                  "Our Executive Search service helps organizations identify and hire exceptional leaders who can drive growth, innovation, and long-term success. We combine industry expertise, deep market insights, and a structured search process to connect you with top-tier professionals who align with your business goals and culture.",
+                  "From assessing leadership potential to ensuring the right fit, we manage the entire executive hiring process with discretion, precision, and a focus on delivering measurable results."
+                ],
+                "approachBadge": "OUR APPROACH",
+                "approachTitle": "Service Center",
+                "approachTitlePart1": "Service",
+                "approachHighlight": "Center",
+                "approachDescription": "We follow a structured and research-driven approach to ensure you get the right leadership talent. Our process includes market mapping, candidate assessment, and thorough evaluation to deliver professionals who can make an immediate impact.",
+                "features": [
+                  {
+                    "title": "Strategic Talent Mapping",
+                    "description": "We identify and engage high-potential leaders through detailed market research and industry insights.",
+                    "image": "/images/service-detail-mapping.png"
+                  },
+                  {
+                    "title": "Candidate Evaluation",
+                    "description": "Our experts conduct in-depth assessments to ensure the right skills, experience, and cultural fit for your leadership roles.",
+                    "image": "/images/service-detail-evaluation.png"
+                  }
+                ]
+              },
+              {
+                "id": "rpo-solutions",
+                "title": "RPO Solutions",
+                "description": "Streamline end-to-end recruitment processes efficiently.",
+                "icon": "rpoSolutions",
+                "href": "/services/rpo-solutions",
+                "activeService": "rpo-solutions",
+                "heroImage": "/images/service-detail-main.png",
+                "overviewBadge": "RPO SOLUTIONS",
+                "overviewTitle": "Recruitment Process Outsourcing",
+                "overviewTitlePart1": "RPO",
+                "overviewHighlight": "Solutions",
+                "overviewParagraphs": [
+                  "Our Recruitment Process Outsourcing (RPO) models act as an embedded extension of your talent acquisition team, managing end-to-end recruitment functions from employer branding to final onboarding.",
+                  "By combining scalable recruiter networks with modern applicant tracking technology, we reduce cost-per-hire and shorten hiring turnaround times significantly."
+                ],
+                "approachBadge": "OUR APPROACH",
+                "approachTitle": "End-to-End Delivery Center",
+                "approachTitlePart1": "End-to-End",
+                "approachHighlight": "Delivery Center",
+                "approachDescription": "An embedded model integrating experienced recruitment teams, smart applicant tracking systems, and automated workflows.",
+                "features": [
+                  {
+                    "title": "Scalable Infrastructure",
+                    "description": "Scale hiring velocity up or down dynamically depending on seasonal or enterprise business growth trajectories.",
+                    "image": "/images/service-detail-mapping.png"
+                  },
+                  {
+                    "title": "Data-Driven Analytics",
+                    "description": "Granular talent dashboards, time-to-fill tracking, and cost optimization analytics across every business unit.",
+                    "image": "/images/service-detail-evaluation.png"
+                  }
+                ]
+              },
+              {
+                "id": "hr-consulting",
+                "title": "HR Consulting",
+                "description": "Expert advice to optimize workforce strategies.",
+                "icon": "hrConsulting",
+                "href": "/services/hr-consulting",
+                "activeService": "hr-consulting",
+                "heroImage": "/images/service-detail-main.png",
+                "overviewBadge": "HR CONSULTING",
+                "overviewTitle": "Strategic HR Advisory",
+                "overviewTitlePart1": "HR",
+                "overviewHighlight": "Consulting",
+                "overviewParagraphs": [
+                  "Our HR Consulting practice empowers companies to design organizational frameworks, retention policies, and performance management systems that foster high-performance workplace cultures.",
+                  "We provide advisory services ranging from compliance risk auditing and compensation benchmarking to leadership succession planning and workforce transformation."
+                ],
+                "approachBadge": "OUR APPROACH",
+                "approachTitle": "Advisory & Transformation Center",
+                "approachTitlePart1": "Advisory &",
+                "approachHighlight": "Transformation Center",
+                "approachDescription": "Tailored strategic frameworks aligned with your business model, corporate compliance requirements, and employee engagement benchmarks.",
+                "features": [
+                  {
+                    "title": "Policy & Framework Design",
+                    "description": "Formulate modern workplace policies, employee handbooks, and competitive compensation structures.",
+                    "image": "/images/service-detail-mapping.png"
+                  },
+                  {
+                    "title": "Performance Optimization",
+                    "description": "Implement goal-oriented appraisal mechanisms and continuous feedback cultures that drive measurable results.",
+                    "image": "/images/service-detail-evaluation.png"
+                  }
+                ]
+              },
+              {
+                "id": "payroll-management",
+                "title": "Payroll Management",
+                "description": "Accurate, compliant, and timely payroll processing.",
+                "icon": "payrollManagement",
+                "href": "/services/payroll-management",
+                "activeService": "payroll-management",
+                "heroImage": "/images/service-detail-main.png",
+                "overviewBadge": "PAYROLL MANAGEMENT",
+                "overviewTitle": "Seamless Payroll Operations",
+                "overviewTitlePart1": "Payroll",
+                "overviewHighlight": "Management",
+                "overviewParagraphs": [
+                  "Our Payroll Management solutions remove the administrative burden and compliance risks associated with employee salary processing, tax withholdings, and statutory filings.",
+                  "Leveraging cloud payroll architecture, we deliver 100% precision, timely disbursements, and self-service portals for employees across pan-India and international locations."
+                ],
+                "approachBadge": "OUR APPROACH",
+                "approachTitle": "Payroll Operations Center",
+                "approachTitlePart1": "Payroll Operations",
+                "approachHighlight": "Center",
+                "approachDescription": "Fully automated calculation engines ensuring zero error rates, confidentiality, and prompt statutory remittance.",
+                "features": [
+                  {
+                    "title": "Statutory Compliance",
+                    "description": "Automated filing and reconciliation for PF, ESIC, Professional Tax, TDS, and government mandates.",
+                    "image": "/images/service-detail-mapping.png"
+                  },
+                  {
+                    "title": "Employee Self-Service",
+                    "description": "Digital payslips, tax projection calculators, and seamless leave-attendance synchronization.",
+                    "image": "/images/service-detail-evaluation.png"
+                  }
+                ]
+              },
+              {
+                "id": "talent-mapping",
+                "title": "Talent Mapping",
+                "description": "Identify and analyze market talent availability.",
+                "icon": "talentMapping",
+                "href": "/services/talent-mapping",
+                "activeService": "talent-mapping",
+                "heroImage": "/images/service-detail-main.png",
+                "overviewBadge": "TALENT MAPPING",
+                "overviewTitle": "Comprehensive Talent Mapping",
+                "overviewTitlePart1": "Talent",
+                "overviewHighlight": "Mapping",
+                "overviewParagraphs": [
+                  "Our Talent Mapping intelligence equips leadership teams with transparent visibility into competitor talent structures, market compensation bands, and passive candidate ecosystems.",
+                  "By proactively mapping critical domain specialists before immediate vacancies arise, organizations eliminate costly downtime during critical talent searches."
+                ],
+                "approachBadge": "OUR APPROACH",
+                "approachTitle": "Market Intelligence Center",
+                "approachTitlePart1": "Market Intelligence",
+                "approachHighlight": "Center",
+                "approachDescription": "Granular market intelligence and talent pool mapping tailored to your sector's emergent technical competencies.",
+                "features": [
+                  {
+                    "title": "Competitor Benchmarking",
+                    "description": "Gain qualitative visibility into organizational structures, salary ranges, and talent density across rival firms.",
+                    "image": "/images/service-detail-mapping.png"
+                  },
+                  {
+                    "title": "Pipeline Readiness",
+                    "description": "Build pre-engaged pipelines of qualified senior specialists ready to interview when hiring mandates open.",
+                    "image": "/images/service-detail-evaluation.png"
+                  }
+                ]
+              },
+              {
+                "id": "leadership-hiring",
+                "title": "Leadership Hiring",
+                "description": "Strategic hiring for senior and board-level roles.",
+                "icon": "leadershipHiring",
+                "href": "/services/leadership-hiring",
+                "activeService": "leadership-hiring",
+                "heroImage": "/images/service-detail-main.png",
+                "overviewBadge": "LEADERSHIP HIRING",
+                "overviewTitle": "Senior & Board Leadership Hiring",
+                "overviewTitlePart1": "Leadership",
+                "overviewHighlight": "Hiring",
+                "overviewParagraphs": [
+                  "Our Leadership Hiring practice specializes in placing visionary Directors, Vice Presidents, and CXOs who define organizational culture and catalyze business expansion.",
+                  "Through discreet board-level engagement and psychometric profiling, we ensure candidates possess the strategic foresight and crisis leadership required to steer enterprise success."
+                ],
+                "approachBadge": "OUR APPROACH",
+                "approachTitle": "Leadership Center",
+                "approachTitlePart1": "Leadership",
+                "approachHighlight": "Center",
+                "approachDescription": "Confidential, high-touch advisory matching high-caliber leadership talent with strategic organizational charters.",
+                "features": [
+                  {
+                    "title": "Discreet Executive Search",
+                    "description": "High-confidentiality outreach to established leaders without disrupting marketplace stability.",
+                    "image": "/images/service-detail-mapping.png"
+                  },
+                  {
+                    "title": "Board Alignment Assessment",
+                    "description": "Rigorous appraisal of leadership philosophy, governance experience, and strategic alignment with board priorities.",
+                    "image": "/images/service-detail-evaluation.png"
+                  }
+                ]
+              }
+            ],
+            "needHelp": {
+              "badge": "LET'S TALK",
+              "titlePart1": "Connect With",
+              "highlight": "Our Experts",
+              "description": "Have questions or need guidance? Our team is here to help you find the right talent solutions.",
+              "phone": "+1 000000000",
+              "email": "info@xyz.com",
+              "downloadText": "Download PDF",
+              "downloadHref": "/contact"
+            },
+            "servicesNavList": [
+              {
+                "id": "permanent-recruitment",
+                "name": "Permanent Recruitment",
+                "href": "/services/permanent-recruitment",
+                "slug": "permanent-recruitment"
+              },
+              {
+                "id": "contract-staffing",
+                "name": "Contract Staffing",
+                "href": "/services/contract-staffing",
+                "slug": "contract-staffing"
+              },
+              {
+                "id": "executive-search",
+                "name": "Executive Search",
+                "href": "/services/executive-search",
+                "slug": "executive-search"
+              },
+              {
+                "id": "rpo-solutions",
+                "name": "RPO Solutions",
+                "href": "/services/rpo-solutions",
+                "slug": "rpo-solutions"
+              },
+              {
+                "id": "hr-consulting",
+                "name": "HR Consulting",
+                "href": "/services/hr-consulting",
+                "slug": "hr-consulting"
+              },
+              {
+                "id": "payroll-management",
+                "name": "Payroll Management",
+                "href": "/services/payroll-management",
+                "slug": "payroll-management"
+              },
+              {
+                "id": "talent-mapping",
+                "name": "Talent Mapping",
+                "href": "/services/talent-mapping",
+                "slug": "talent-mapping"
+              },
+              {
+                "id": "leadership-hiring",
+                "name": "Leadership Hiring",
+                "href": "/services/leadership-hiring",
+                "slug": "leadership-hiring"
+              }
+            ]
+          }
+        }
+      },
+      "experties": {
+        "variants": {
+          "HirenzExperties1": {
+            "badge": "INDUSTRIES WE SERVE",
+            "headline": "Industry Expertise And",
+            "highlight": "Specialized",
+            "description": "We understand the unique hiring needs of different industries and provide tailored solutions to help businesses build high-performing teams.",
+            "industries": [
+              {
+                "title": "IT & Technology",
+                "imageSrc": "/images/clean-industry-it-tech.png",
+                "alt": "IT & Technology recruitment and staffing solutions",
+                "icon": "technology"
+              },
+              {
+                "title": "Healthcare",
+                "imageSrc": "/images/clean-industry-healthcare.png",
+                "alt": "Healthcare professionals and medical staffing solutions",
+                "icon": "healthcare"
+              },
+              {
+                "title": "Manufacturing",
+                "imageSrc": "/images/clean-industry-manufacturing.png",
+                "alt": "Manufacturing and industrial workforce solutions",
+                "icon": "manufacturing"
+              },
+              {
+                "title": "Finance & Banking",
+                "imageSrc": "/images/clean-industry-finance.png",
+                "alt": "Finance and Banking recruitment specialists",
+                "icon": "finance"
+              },
+              {
+                "title": "Retail & FMCG",
+                "imageSrc": "/images/clean-industry-retail.png",
+                "alt": "Retail and FMCG talent management solutions",
+                "icon": "retail"
+              }
+            ]
+          }
+        }
+      },
+      "process": {
+        "variants": {
+          "HirenzProcess1": {
+            "badge": "OUR METHODOLOGY",
+            "headline": "Simple Steps to Build Your Dream Team",
+            "titlePart1": "Simple Steps to",
+            "highlight": "Build Your Dream Team",
+            "description": "Our structured hiring lifecycle guarantees transparency, velocity, and top-tier talent precision.",
+            "steps": [
+              {
+                "step": "01",
+                "title": "Requirement Analysis",
+                "description": "We collaborate closely to define technical benchmarks, leadership traits, budget expectations, and cultural dynamics.",
+                "icon": "requirementAnalysis"
+              },
+              {
+                "step": "02",
+                "title": "Talent Sourcing & Mapping",
+                "description": "Leveraging AI analytics, targeted headhunting, and deep networks to map high-caliber active and passive talent.",
+                "icon": "sourcingScreening"
+              },
+              {
+                "step": "03",
+                "title": "Screening & Evaluation",
+                "description": "Rigorous behavioral interviews, technical proficiency checks, and psychometric assessments to shortlist top candidates.",
+                "icon": "interviewEvaluation"
+              },
+              {
+                "step": "04",
+                "title": "Placement & Onboarding",
+                "description": "Facilitating offers, negotiations, and structured onboarding check-ins for long-term retention and success.",
+                "icon": "selectionOnboarding"
+              },
+              {
+                "step": "05",
+                "title": "30-60-90 Day Success Check-in",
+                "description": "Structured check-ins to ensure seamless integration and long-term success of the new hire.",
+                "icon": "requirementAnalysis"
+              }
+            ]
+          }
+        }
+      },
+      "testimonial": {
+        "variants": {
+          "HirenzTestimonial1": {
+            "badge": "TESTIMONIALS",
+            "titlePart1": "What Our Clients And",
+            "highlight": "Candidates Say",
+            "headline": "What Our Clients And Candidates Say",
+            "headlinePart1": "What Our Clients",
+            "headlinePart2": "And",
+            "description": "Real feedback and verified reviews from corporate hiring leaders and talented professionals who partnered with Hirenz.",
+            "testimonialsList": [
+              {
+                "id": "rahul-mehta",
+                "quote": "HirenZ understood our hiring needs perfectly and provided highly qualified candidates. Their team is professional, responsive, and truly committed to client success.",
+                "name": "Rahul Mehta",
+                "role": "HR Manager",
+                "company": "TechNova Solutions",
+                "imageSrc": "/images/avatar-rahuls.png",
+                "rating": 5
+              },
+              {
+                "id": "sneha-kapur",
+                "quote": "Working with Hirenz has transformed our recruitment strategy. They consistently deliver highly qualified candidates aligned with our technical requirements and culture.",
+                "name": "Sneha Kapur",
+                "role": "Talent Acquisition Head",
+                "company": "NextGen Systems",
+                "imageSrc": "/images/testimonial-sneha.jpg",
+                "rating": 5
+              },
+              {
+                "id": "amitabh-verma",
+                "quote": "The professional expertise and swift execution from Hirenz made scaling our engineering team seamless. Highly recommended for executive and niche hiring.",
+                "name": "Amitabh Verma",
+                "role": "VP of Engineering",
+                "company": "CloudScale India",
+                "imageSrc": "/images/testimonial-amitabh.jpg",
+                "rating": 5
+              },
+              {
+                "id": "priya-sharma",
+                "quote": "Outstanding recruitment partner. Their proactive communication, vetted candidate pool, and fast turnaround saved our leadership weeks of sourcing time.",
+                "name": "Priya Sharma",
+                "role": "Operations Director",
+                "company": "Apex Logistics",
+                "imageSrc": "/images/testimonial-priya.jpg",
+                "rating": 5
+              },
+              {
+                "id": "vikram-singhania",
+                "quote": "From senior architects to specialized technical managers, Hirenz delivered top-tier talent with exceptional precision and professionalism.",
+                "name": "Vikram Singhania",
+                "role": "Chief Technology Officer",
+                "company": "FinTech Core",
+                "imageSrc": "/images/testimonial-vikram.jpg",
+                "rating": 5
+              },
+              {
+                "id": "ananya-roy",
+                "quote": "Their deep industry knowledge and candidate assessment accuracy made our high-volume hiring effortless and successful. A truly dependable talent partner.",
+                "name": "Ananya Roy",
+                "role": "Head of Human Resources",
+                "company": "Horizon Media",
+                "imageSrc": "/images/testimonial-ananya.jpg",
+                "rating": 5
+              }
+            ]
+          }
+        }
+      },
+      "blog": {
+        "variants": {
+          "HirenzBlog1": {
+            "badge": "LATEST INSIGHTS & RESOURCES",
+            "headline": "Latest",
+            "highlight": "Insights & Resources",
+            "description": "Explore expert insights, hiring tips, and industry updates to help you build stronger teams and grow your business.",
+            "blogPosts": [
+              {
+                "id": "how-to-build-high-performing-team",
+                "title": "How to Build a High-Performing Team in Today's Workplace",
+                "titlePart1": "How to Build a",
+                "highlight": "High-Performing Team",
+                "description": "Discover key strategies to attract, engage, and retain top talent while creating a positive and productive work environment.",
+                "author": "ADMIN",
+                "date": "OCTOBER 10, 2026",
+                "readTime": "5 Min Read",
+                "imageSrc": "/images/blog-featured.png",
+                "href": "/blog/how-to-build-high-performing-team",
+                "heroImage": "/images/blog-featured.png",
+                "introParagraphs": [
+                  "Building a high-performing team in today's dynamic workplace demands clear communication, psychological safety, and aligned vision. When team members understand their roles and feel empowered, organizations reach breakthrough results.",
+                  "Modern leaders must balance performance expectations with empathetic support, fostering an environment where innovation thrives naturally."
+                ],
+                "section1Title": "Why High-Performing Teams Matter",
+                "section1Content": "High-performing teams accomplish more in less time, adapt rapidly to market shifts, and foster continuous innovation. They create competitive advantages that enable sustainable business expansion.",
+                "section2Title": "Key Pillars of Team Excellence",
+                "section2Intro": "Fostering high productivity and team engagement requires core cultural building blocks:",
+                "keyElements": [
+                  {
+                    "title": "Transparent Communication",
+                    "description": "Encourage open, honest discussions across all seniority levels.",
+                    "icon": "checkmark"
+                  },
+                  {
+                    "title": "Continuous Growth",
+                    "description": "Invest in skill development and career progression pathways.",
+                    "icon": "checkmark"
+                  },
+                  {
+                    "title": "Meaningful Recognition",
+                    "description": "Celebrate milestones and individual contributions consistently.",
+                    "icon": "checkmark"
+                  },
+                  {
+                    "title": "Empowered Autonomy",
+                    "description": "Trust team members with ownership and accountability.",
+                    "icon": "checkmark"
+                  },
+                  {
+                    "title": "Workplace Well-being",
+                    "description": "Encourage sustainable work-life equilibrium and mental health.",
+                    "icon": "checkmark"
+                  },
+                  {
+                    "title": "Visionary Leadership",
+                    "description": "Guide teams with clear expectations, empathy, and purpose.",
+                    "icon": "checkmark"
+                  }
+                ],
+                "section3Title": "The Long-Term Impact",
+                "section3Content": "Investing in your team culture produces enduring dividends. High-performing teams generate exceptional customer outcomes, reduced employee turnover, and resilient organizational growth."
+              },
+              {
+                "id": "5-effective-ways-to-improve-employee-engagement",
+                "title": "5 Effective Ways to Improve Employee Engagement",
+                "titlePart1": "5 Effective Ways to",
+                "highlight": "Improve Employee Engagement",
+                "description": "Explore practical and actionable strategies to boost morale, enhance productivity, and foster commitment across your organization.",
+                "author": "ADMIN",
+                "date": "OCTOBER 08, 2026",
+                "readTime": "4 Min Read",
+                "imageSrc": "/images/blog-thumb-1.png",
+                "href": "/blog/5-effective-ways-to-improve-employee-engagement",
+                "heroImage": "/images/service-detail-main.png",
+                "introParagraphs": [
+                  "Employee engagement is the emotional commitment an employee has to the organization and its goals. High engagement directly correlates with superior productivity, profitability, and retention.",
+                  "Organizations prioritizing active engagement cultivate passionate teams dedicated to delivering excellence every day."
+                ],
+                "section1Title": "The Power of Engaged Employees",
+                "section1Content": "Engaged employees take pride in their work, collaborate effectively, and proactively solve problems. They represent the lifeblood of customer satisfaction and corporate reputation.",
+                "section2Title": "5 Practical Steps to Enhance Engagement",
+                "section2Intro": "Implement these foundational initiatives to energize your workplace:",
+                "keyElements": [
+                  {
+                    "title": "Listen Proactively",
+                    "description": "Conduct regular pulse surveys and 1-on-1 check-ins.",
+                    "icon": "checkmark"
+                  },
+                  {
+                    "title": "Recognize Contributions",
+                    "description": "Celebrate small wins and peer-to-peer achievements publicly.",
+                    "icon": "checkmark"
+                  },
+                  {
+                    "title": "Provide Growth Paths",
+                    "description": "Offer mentorship and upskilling opportunities.",
+                    "icon": "checkmark"
+                  },
+                  {
+                    "title": "Promote Flexibility",
+                    "description": "Support hybrid arrangements and adaptable working hours.",
+                    "icon": "checkmark"
+                  },
+                  {
+                    "title": "Foster Belonging",
+                    "description": "Create inclusive community forums and cross-functional events.",
+                    "icon": "checkmark"
+                  },
+                  {
+                    "title": "Lead by Example",
+                    "description": "Demonstrate authentic enthusiasm and supportive management.",
+                    "icon": "checkmark"
+                  }
+                ],
+                "section3Title": "Sustaining Momentum",
+                "section3Content": "Engagement is not a one-time campaign, but a continuous journey of listening, adapting, and valuing every team member's unique contributions."
+              },
+              {
+                "id": "role-of-leadership-in-employee-development",
+                "title": "The Role of Leadership in Employee Development",
+                "titlePart1": "The Role of Leadership in",
+                "highlight": "Employee Development",
+                "description": "Understand how modern leaders mentor talent, cultivate future leaders, and build agile career progression frameworks.",
+                "author": "ADMIN",
+                "date": "OCTOBER 06, 2026",
+                "readTime": "6 Min Read",
+                "imageSrc": "/images/blog-thumb-2.png",
+                "href": "/blog/role-of-leadership-in-employee-development",
+                "heroImage": "/images/service-detail-main.png",
+                "introParagraphs": [
+                  "Exceptional leaders do not merely manage workflows—they develop future leaders. By championing talent growth, leaders ignite innovation and organizational longevity.",
+                  "In competitive talent markets, opportunities for development are among the strongest drivers of candidate choice and employee retention."
+                ],
+                "section1Title": "Leadership as a Growth Catalyst",
+                "section1Content": "When managers transition from task supervisors to growth mentors, employees feel valued and motivated to push their creative and analytical boundaries.",
+                "section2Title": "Core Development Leadership Practices",
+                "section2Intro": "Key habits that distinguish impactful leadership mentors:",
+                "keyElements": [
+                  {
+                    "title": "Individualized Mentorship",
+                    "description": "Tailor coaching to each employee's strengths and aspirations.",
+                    "icon": "checkmark"
+                  },
+                  {
+                    "title": "Safe Failure Environment",
+                    "description": "Encourage experimentation without punitive repercussions.",
+                    "icon": "checkmark"
+                  },
+                  {
+                    "title": "Stretch Assignments",
+                    "description": "Assign challenging projects that build new competencies.",
+                    "icon": "checkmark"
+                  },
+                  {
+                    "title": "Actionable Feedback",
+                    "description": "Deliver constructive guidance timely and respectfully.",
+                    "icon": "checkmark"
+                  },
+                  {
+                    "title": "Succession Planning",
+                    "description": "Prepare internal talent to step seamlessly into senior roles.",
+                    "icon": "checkmark"
+                  },
+                  {
+                    "title": "Empathy & Support",
+                    "description": "Maintain open ears for challenges both inside and outside the office.",
+                    "icon": "checkmark"
+                  }
+                ],
+                "section3Title": "A Legacy of Capability",
+                "section3Content": "The ultimate measure of a leader is not how many followers they create, but how many capable, inspired leaders they develop along the way."
+              },
+              {
+                "id": "creating-a-positive-workplace-culture",
+                "title": "Creating a Positive Workplace Culture",
+                "titlePart1": "Creating a Positive",
+                "highlight": "Workplace Culture",
+                "description": "Learn the foundational steps to establish trust, mutual respect, and high morale across diverse distributed teams.",
+                "author": "ADMIN",
+                "date": "OCTOBER 04, 2026",
+                "readTime": "5 Min Read",
+                "imageSrc": "/images/blog-thumb-3.png",
+                "href": "/blog/creating-a-positive-workplace-culture",
+                "heroImage": "/images/service-detail-main.png",
+                "introParagraphs": [
+                  "A positive workplace culture is more than just a pleasant environment — it's the foundation for stronger teams, higher productivity, and long-term business success. When employees feel valued, supported, and inspired, they contribute their best work and help create a thriving organization.",
+                  "In today's competitive business landscape, companies that prioritize workplace culture are better positioned to attract top talent, retain employees, and drive sustainable growth."
+                ],
+                "section1Title": "Why Workplace Culture Matters",
+                "section1Content": "A strong workplace culture fosters trust, collaboration, and a shared sense of purpose. It directly impacts employee engagement, reduces turnover, and creates a positive brand image in the industry. Employees who feel connected to their workplace are more motivated, innovative, and committed to achieving organizational goals.",
+                "section2Title": "Key Elements of a Positive Workplace Culture",
+                "section2Intro": "Building a healthy and motivating work environment involves a combination of people, processes, and values. Here are some key elements:",
+                "keyElements": [
+                  {
+                    "title": "Open Communication",
+                    "description": "Encourage transparent and honest conversations at all levels.",
+                    "icon": "checkmark"
+                  },
+                  {
+                    "title": "Growth Opportunities",
+                    "description": "Provide learning and development to help employees advance.",
+                    "icon": "checkmark"
+                  },
+                  {
+                    "title": "Employee Recognition",
+                    "description": "Appreciate and celebrate contributions, big or small.",
+                    "icon": "checkmark"
+                  },
+                  {
+                    "title": "Inclusive Environment",
+                    "description": "Ensure every individual feels respected, heard, and valued.",
+                    "icon": "checkmark"
+                  },
+                  {
+                    "title": "Work-Life Balance",
+                    "description": "Promote flexibility and well-being for long-term productivity.",
+                    "icon": "checkmark"
+                  },
+                  {
+                    "title": "Strong Leadership",
+                    "description": "Empower leaders who support and inspire their teams.",
+                    "icon": "checkmark"
+                  }
+                ],
+                "section3Title": "The Long-Term Impact",
+                "section3Content": "Investing in workplace culture is not just a short-term initiative — it creates lasting benefits. A positive culture leads to stronger team performance, higher employee satisfaction, and a more resilient organization ready for future challenges."
+              },
+              {
+                "id": "mastering-executive-search-strategies",
+                "title": "Mastering Executive Search: Proven Strategies for Hiring C-Suite Leaders",
+                "titlePart1": "Mastering Executive Search: Proven Strategies for",
+                "highlight": "Hiring C-Suite Leaders",
+                "description": "Explore the critical assessment frameworks and confidential sourcing techniques needed to recruit high-impact executive leadership.",
+                "author": "ADMIN",
+                "date": "OCTOBER 02, 2026",
+                "readTime": "7 Min Read",
+                "imageSrc": "/images/clean-industry-it-tech.png",
+                "href": "/blog/mastering-executive-search-strategies",
+                "heroImage": "/images/service-detail-main.png",
+                "introParagraphs": [
+                  "Recruiting executive and C-suite talent requires a level of discretion, strategic alignment, and rigorous vetting far beyond conventional hiring practices. Leaders determine company culture, strategic trajectory, and market credibility.",
+                  "At Hirenz, our executive search methodology leverages deep talent mapping, behavioral leadership assessments, and confidential outreach to ensure a seamless alignment with your corporate roadmap."
+                ],
+                "section1Title": "The Nuances of C-Suite Talent Acquisition",
+                "section1Content": "Unlike mid-level hiring, top-tier leadership candidates are rarely active job seekers. Reaching them demands peer-to-peer consultative engagement, a clear value proposition, and an appreciation of long-term organizational objectives.",
+                "section2Title": "Core Competencies of Executive Search Success",
+                "section2Intro": "Leading recruitment advisories rely on multi-stage evaluation criteria:",
+                "keyElements": [
+                  {
+                    "title": "Confidential Talent Mapping",
+                    "description": "Identify passive leadership talent without alerting competitors or disruptive market signals.",
+                    "icon": "checkmark"
+                  },
+                  {
+                    "title": "Cultural Alignment Analysis",
+                    "description": "Assess executive leadership style against existing company values and board expectations.",
+                    "icon": "checkmark"
+                  },
+                  {
+                    "title": "Strategic Vision Evaluation",
+                    "description": "Verify candidate capability to drive innovation, revenue acceleration, and business transformation.",
+                    "icon": "checkmark"
+                  },
+                  {
+                    "title": "Comprehensive Background Diligence",
+                    "description": "Conduct discreet references across past board members, peers, and direct reports.",
+                    "icon": "checkmark"
+                  },
+                  {
+                    "title": "Offer & Governance Advisory",
+                    "description": "Structure competitive equity and compensation agreements aligned with industry standards.",
+                    "icon": "checkmark"
+                  },
+                  {
+                    "title": "Onboarding & Integration",
+                    "description": "Facilitate a smooth 90-day transition period for the new executive hire.",
+                    "icon": "checkmark"
+                  }
+                ],
+                "section3Title": "Driving Sustainable Growth with Executive Talent",
+                "section3Content": "The right leadership hire accelerates corporate milestones, attracts downstream top-tier talent, and stabilizes shareholder confidence. Diligent executive search is an investment in your company's future."
+              },
+              {
+                "id": "remote-and-hybrid-workforce-trends",
+                "title": "Navigating Remote and Hybrid Workforce Trends in 2026",
+                "titlePart1": "Navigating Remote and Hybrid",
+                "highlight": "Workforce Trends in 2026",
+                "description": "Discover modern workforce trends, asynchronous productivity frameworks, and retention tips for high-performing distributed teams.",
+                "author": "ADMIN",
+                "date": "SEPTEMBER 28, 2026",
+                "readTime": "5 Min Read",
+                "imageSrc": "/images/clean-industry-finance.png",
+                "href": "/blog/remote-and-hybrid-workforce-trends",
+                "heroImage": "/images/service-detail-mapping.png",
+                "introParagraphs": [
+                  "The modern workplace has evolved past geographical boundaries. Global talent distribution has created unprecedented opportunities for organizations to scale quickly with specialized skill sets.",
+                  "However, managing remote and hybrid teams successfully requires intentional communication channels, modern collaboration tooling, and outcome-oriented performance metrics."
+                ],
+                "section1Title": "The Evolution of Flexible Work Architecture",
+                "section1Content": "Companies adopting flexible hybrid policies consistently report wider candidate talent pools, higher retention rates, and reduced operational overhead. Flexibility is now a top factor for senior job seekers.",
+                "section2Title": "Best Practices for Distributed Team Management",
+                "section2Intro": "To ensure high performance across time zones, organizations prioritize:",
+                "keyElements": [
+                  {
+                    "title": "Asynchronous Documentation",
+                    "description": "Maintain exhaustive knowledge bases to minimize timezone dependency and meeting fatigue.",
+                    "icon": "checkmark"
+                  },
+                  {
+                    "title": "Outcome-Based KPIs",
+                    "description": "Evaluate team members based on deliverable quality and milestones rather than hours online.",
+                    "icon": "checkmark"
+                  },
+                  {
+                    "title": "Virtual Team Camaraderie",
+                    "description": "Schedule intentional casual interaction, virtual coffees, and annual in-person retreats.",
+                    "icon": "checkmark"
+                  },
+                  {
+                    "title": "Cybersecurity & Data Privacy",
+                    "description": "Implement zero-trust security architecture across distributed workstations.",
+                    "icon": "checkmark"
+                  },
+                  {
+                    "title": "Digital Ergonomics & Wellness",
+                    "description": "Provide home-office stipends and wellness days to prevent burnout.",
+                    "icon": "checkmark"
+                  },
+                  {
+                    "title": "Equal Promotion Opportunities",
+                    "description": "Ensure remote workers receive equal consideration for leadership and career milestones.",
+                    "icon": "checkmark"
+                  }
+                ],
+                "section3Title": "The Future of Global Workforce Agility",
+                "section3Content": "Organizations that master hybrid and remote workforce strategies gain an unmatched hiring speed and agility. Building a culture of trust and transparency remains the bedrock of remote success."
+              }
+            ]
+          }
+        }
+      },
+      "jobs": {
+        "variants": {
+          "HirenzJobs1": {
+            "badge": "CAREER OPPORTUNITIES",
+            "headline": "Explore Career Opportunities",
+            "titlePart1": "Explore",
+            "highlight": "Career Opportunities",
+            "description": "We are always looking for talented and passionate professionals who can contribute to our mission. Join our team and build a rewarding career with Hirenz.",
+            "jobsList": [
+              {
+                "id": "hr-executive",
+                "title": "HR Executive",
+                "department": "Human Resources",
+                "location": "Noida, UP",
+                "type": "Full Time",
+                "description": "We are looking for an enthusiastic HR Executive to manage recruitment, employee engagement, and day-to-day HR operations.",
+                "postedDate": "Posted 2 days ago",
+                "icon": "user"
+              },
+              {
+                "id": "recruitment-specialist",
+                "title": "Recruitment Specialist",
+                "department": "Recruitment",
+                "location": "Noida, UP",
+                "type": "Full Time",
+                "description": "Join our team as a Recruitment Specialist to source, screen, and hire top talent across various industries.",
+                "postedDate": "Posted 3 days ago",
+                "icon": "search"
+              },
+              {
+                "id": "business-development-executive",
+                "title": "Business Development Executive",
+                "department": "Sales & Business Development",
+                "location": "Noida, UP",
+                "type": "Full Time",
+                "description": "We are seeking a dynamic Business Development Executive to identify new opportunities and build strong client relationships.",
+                "postedDate": "Posted 4 days ago",
+                "icon": "briefcase"
+              },
+              {
+                "id": "digital-marketing-executive",
+                "title": "Digital Marketing Executive",
+                "department": "Marketing",
+                "location": "Noida, UP",
+                "type": "Full Time",
+                "description": "Looking for a creative Digital Marketing Executive to manage online campaigns, content, and brand presence.",
+                "postedDate": "Posted 5 days ago",
+                "icon": "star"
+              },
+              {
+                "id": "operations-associate",
+                "title": "Operations Associate",
+                "department": "Operations",
+                "location": "Noida, UP",
+                "type": "Full Time",
+                "description": "Join our operations team to support day-to-day activities, ensure smooth processes, and improve operational efficiency.",
+                "postedDate": "Posted 6 days ago",
+                "icon": "checkCircle"
+              },
+              {
+                "id": "finance-executive",
+                "title": "Finance Executive",
+                "department": "Finance & Accounting",
+                "location": "Noida, UP",
+                "type": "Full Time",
+                "description": "We are hiring a Finance Executive to manage accounts, invoices, and financial reporting activities.",
+                "postedDate": "Posted 1 week ago",
+                "icon": "fileText"
+              },
+              {
+                "id": "content-writer",
+                "title": "Content Writer",
+                "department": "Marketing",
+                "location": "Noida, UP",
+                "type": "Full Time",
+                "description": "We are looking for a skilled Content Writer to create engaging content for our website, blogs, and marketing materials.",
+                "postedDate": "Posted 1 week ago",
+                "icon": "fileText"
+              },
+              {
+                "id": "it-support-executive",
+                "title": "IT Support Executive",
+                "department": "Information Technology",
+                "location": "Noida, UP",
+                "type": "Full Time",
+                "description": "Join our IT team to provide technical support, troubleshoot issues, and ensure smooth system operations.",
+                "postedDate": "Posted 1 week ago",
+                "icon": "technology"
+              },
+              {
+                "id": "admin-executive",
+                "title": "Admin Executive",
+                "department": "Administration",
+                "location": "Noida, UP",
+                "type": "Full Time",
+                "description": "We are looking for an organized Admin Executive to handle office coordination, documentation, and general administrative tasks.",
+                "postedDate": "Posted 1 week ago",
+                "icon": "user"
+              }
+            ]
+          }
+        }
+      },
+      "applyNow": {
+        "variants": {
+          "HirenzApplyNow1": {
+            "badge": "CAREER APPLICATION",
+            "headline": "Apply Now",
+            "titlePart1": "Apply",
+            "highlight": "Now",
+            "title": "Apply Now",
+            "description": "Fill out the form below to apply for this position. Our team will review your application and get back to you soon.",
+            "submitButtonText": "Submit Application",
+            "uploadTitle": "Drag and drop your resume here",
+            "uploadSubtitle": "or click to browse",
+            "uploadNote": "Supported formats: PDF, DOC, DOCX (Max. 5MB)",
+            "successTitle": "Application Submitted Successfully!",
+            "successMessage": "Thank you for applying. Our talent acquisition team will review your profile and contact you shortly."
+          }
+        }
+      },
+      "contact": {
+        "variants": {
+          "HirenzContact1": {
+            "badge": "CONTACT US",
+            "headline": "We'd Love to Hear From You",
+            "titlePart1": "We'd Love to",
+            "highlight": "Hear From You",
+            "description": "Have a question, need assistance, or want to discuss your hiring needs? Our team is here to help. Reach out to us and we'll get back to you shortly.",
+            "formBadge": "SEND US A MESSAGE",
+            "formTitle": "Get in Touch",
+            "formTitlePart1": "Get in",
+            "formHighlight": "Touch",
+            "formDescription": "Fill out the form below and our team will get back to you soon.",
+            "successTitle": "Message Sent Successfully!",
+            "successMessage": "Thank you for reaching out. We have received your message and will respond within 24 hours.",
+            "locationBadge": "OUR LOCATION",
+            "companyName": "Hirenz Consultancy Pvt. Ltd.",
+            "officeAddress": "3170 Rosewood Lane Unit 200 , Beverly Hills, CA 90210",
+            "mapEmbedUrl": "https://maps.google.com/maps?q=3170+Rosewood+Lane+Unit+200%2C+Beverly+Hills%2C+CA+90210&t=&z=14&ie=UTF8&iwloc=&output=embed",
+            "phone": "+1 000000000",
+            "email": "info@xyz.com",
+            "hours": "Mon - Fri: 9:00 AM - 6:00 PM",
+            "infoCards": [
+              {
+                "icon": "phone",
+                "label": "Call Us",
+                "value": "+1 000000000",
+                "subValue": "Mon - Fri: 9:00 AM - 6:00 PM"
+              },
+              {
+                "icon": "mail",
+                "label": "Email Us",
+                "value": "info@xyz.com",
+                "subValue": "We reply within 24 hours"
+              },
+              {
+                "icon": "mapPin",
+                "label": "Visit Us",
+                "value": "3170 Rosewood Lane Unit 200",
+                "subValue": "Beverly Hills, CA 90210"
+              },
+              {
+                "icon": "clock",
+                "label": "Business Hours",
+                "value": "Mon - Fri: 9:00 AM - 6:00 PM",
+                "subValue": "Sat - Sun: Closed"
+              }
+            ]
+          }
+        }
+      },
+      "thankyou": {
+        "variants": {
+          "HirenzThankyou1": {
+            "metadata": {
+              "title": "Thank You | Hirenz Recruitment & HR Consultancy",
+              "description": "Thank you for reaching out to Hirenz. We have received your inquiry and our talent acquisition team will contact you shortly."
+            },
+            "tagline": "APPLICATION & INQUIRY RECEIVED",
+            "titlePart1": "Thank You for Choosing",
+            "highlight": "Hirenz!",
+            "subtitle": "Your details have been successfully received. Our specialist talent advisors will review your requirements and reach out to you within 24 business hours.",
+            "referencePrefix": "Inquiry Reference:",
+            "backButton": {
+              "label": "Back to Home",
+              "href": "/"
+            },
+            "servicesButton": {
+              "label": "Explore Solutions",
+              "href": "/services"
+            },
+            "contactButton": {
+              "label": "Contact Support",
+              "href": "/contact"
+            },
+            "steps": [
+              {
+                "step": "01",
+                "title": "Review & Assessment",
+                "description": "Our senior talent consultants evaluate your profile or organizational hiring specifications."
+              },
+              {
+                "step": "02",
+                "title": "Consultation Call",
+                "description": "We schedule a dedicated discovery conversation to align on objectives, timelines, and talent expectations."
+              },
+              {
+                "step": "03",
+                "title": "Tailored Execution",
+                "description": "Our team initiates specialized candidate sourcing or workforce strategy delivery."
+              }
+            ]
+          }
+        }
+      },
+      "notFound": {
+        "variants": {
+          "HirenzNotFound1": {
+            "metadata": {
+              "title": "404 - Page Not Found | Hirenz",
+              "description": "The page you are looking for does not exist or has been moved. Explore Hirenz recruitment services, jobs and insights."
+            },
+            "tagline": "ERROR 404",
+            "errorCode": "404",
+            "titlePart1": "Oops! Page Not",
+            "highlight": "Found",
+            "subtitle": "The page you are looking for might have been moved, removed, or is temporarily unavailable. Let's get you back to finding the right talent.",
+            "homeButton": {
+              "label": "Return to Homepage",
+              "href": "/"
+            },
+            "contactButton": {
+              "label": "Contact Support",
+              "href": "/contact"
+            }
+          }
+        }
+      }
+    }
+  }
+}
