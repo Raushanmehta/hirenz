@@ -48,11 +48,10 @@ export default function Navbar({
                 <Link
                   key={item.id || item.href}
                   href={item.href}
-                  className={`text-[15px] xl:text-[16px] font-medium tracking-tight transition-all duration-200 relative py-1 ${
-                    isActive
-                      ? "text-[#a84523] font-semibold"
-                      : "text-[#1c1c1c] hover:text-[#a84523]"
-                  }`}
+                  className={`text-[15px] xl:text-[16px] font-medium tracking-tight transition-all duration-200 relative py-1 ${isActive
+                    ? "text-[#a84523] font-semibold"
+                    : "text-[#1c1c1c] hover:text-[#a84523]"
+                    }`}
                 >
                   {item.label}
                   {isActive && (
@@ -83,14 +82,14 @@ export default function Navbar({
             <button
               type="button"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 rounded-md text-[#1c1c1c] hover:text-[#a84523] focus:outline-none focus:ring-2 focus:ring-[#a84523]"
+              className=" rounded-md text-[#1c1c1c] hover:text-[#a84523] focus:outline-none focus:ring-2 focus:ring-[#a84523]"
               aria-expanded={mobileMenuOpen}
               aria-label="Toggle navigation menu"
             >
               {mobileMenuOpen ? (
-                <CloseIcon className="w-6 h-6" />
+                <CloseIcon className="w-7 h-7" />
               ) : (
-                <MenuIcon className="w-6 h-6" />
+                <MenuIcon className="w-7 h-7" />
               )}
             </button>
           </div>
@@ -112,11 +111,10 @@ export default function Navbar({
                   key={item.id || item.href}
                   href={item.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className={`px-3 py-2.5 rounded-md text-base font-medium transition-colors ${
-                    isActive
-                      ? "bg-[#a84523]/10 text-[#a84523] font-semibold"
-                      : "text-[#1c1c1c] hover:bg-gray-50 hover:text-[#a84523]"
-                  }`}
+                  className={`px-3 py-2.5 rounded-md text-base font-medium transition-colors ${isActive
+                    ? "bg-[#a84523]/10 text-[#a84523] font-semibold"
+                    : "text-[#1c1c1c] hover:bg-gray-50 hover:text-[#a84523]"
+                    }`}
                 >
                   {item.label}
                 </Link>

@@ -51,7 +51,7 @@ export default function HeroSection({
   } = data || {};
 
   return (
-    <section className={`relative w-full bg-white font-poppins overflow-hidden py-14 sm:py-20 lg:py-24 min-h-[560px] lg:min-h-[600px] flex items-center ${className}`}>
+    <section className={`relative w-full bg-white font-poppins overflow-hidden py-12 sm:py-16 md:py-20 lg:py-24 min-h-[520px] md:min-h-[560px] lg:min-h-[600px] flex items-center ${className}`}>
       {/* Background banner image */}
       <div className="absolute inset-0 w-full h-full pointer-events-none">
         <Image
@@ -59,9 +59,11 @@ export default function HeroSection({
           alt={`${highlight} recruitment banner`}
           fill
           priority
-          className="object-cover object-right"
+          className="object-cover object-[80%_center] md:object-right"
           sizes="100vw"
         />
+        {/* Soft overlay strictly on small screens (< md), completely disabled on md and large */}
+        <div className="block md:hidden absolute inset-0 bg-white/85 sm:bg-white/65 pointer-events-none" />
       </div>
 
       {/* Hero content container */}
@@ -71,7 +73,7 @@ export default function HeroSection({
           <div className="lg:col-span-7 xl:col-span-6 flex flex-col justify-center">
             {/* Main title animation */}
             <FadeUp delay={0.1}>
-              <h1 className="text-[38px] sm:text-[48px] md:text-[54px] lg:text-[54px] xl:text-[62px] font-extrabold text-[#111111] leading-[1.12] tracking-tight">
+              <h1 className="text-[32px] sm:text-[42px] md:text-[54px] lg:text-[54px] xl:text-[62px] font-extrabold text-[#111111] leading-[1.15] md:leading-[1.12] tracking-tight">
                 {titlePart1} <br />
                 {titlePart2} <br />
                 <span className="text-[#a84523]">{highlight}</span>
@@ -80,19 +82,19 @@ export default function HeroSection({
 
             {/* Paragraph description */}
             <FadeUp delay={0.25}>
-              <p className="mt-2 sm:mt-4 text-[#555555] text-[15px] sm:text-[16px] md:text-[17px] leading-relaxed max-w-[490px]">
+              <p className="mt-2 sm:mt-4 text-[#333333] md:text-[#555555] text-[15px] sm:text-[16px] md:text-[17px] leading-relaxed max-w-[490px]">
                 {description}
               </p>
             </FadeUp>
 
             {/* CTA action buttons */}
             <FadeUp delay={0.4}>
-              <div className="mt-4 sm:mt-6 flex flex-wrap items-center gap-4">
+              <div className="mt-4 sm:mt-6 flex flex-wrap items-center gap-3 sm:gap-4">
                 {primaryCta && (
                   <AnimatedButton>
                     <Link
                       href={primaryCta.href}
-                      className="group inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-lg bg-[#a84523] text-white text-[15px] sm:text-[16px] font-medium transition-all duration-200 shadow-[0_4px_14px_rgba(168,69,35,0.25)] hover:bg-[#8f381a] hover:shadow-[0_6px_20px_rgba(168,69,35,0.35)]"
+                      className="group inline-flex items-center justify-center gap-2 px-6 md:px-7 py-3 md:py-3.5 rounded-lg bg-[#a84523] text-white text-[15px] sm:text-[16px] font-medium transition-all duration-200 shadow-[0_4px_14px_rgba(168,69,35,0.25)] hover:bg-[#8f381a] hover:shadow-[0_6px_20px_rgba(168,69,35,0.35)]"
                     >
                       <span>{primaryCta.label}</span>
                       <ArrowRightIcon className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" />
@@ -104,7 +106,7 @@ export default function HeroSection({
                   <AnimatedButton>
                     <Link
                       href={secondaryCta.href}
-                      className="inline-flex items-center justify-center px-8 py-3.5 rounded-lg border border-[#333333] text-[#1c1c1c] text-[15px] sm:text-[16px] font-medium transition-all duration-200 bg-white hover:bg-gray-50 hover:border-black"
+                      className="inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-3.5 rounded-lg border border-[#333333] text-[#1c1c1c] text-[15px] sm:text-[16px] font-medium transition-all duration-200 bg-white hover:bg-gray-50 hover:border-black"
                     >
                       {secondaryCta.label}
                     </Link>
@@ -116,7 +118,7 @@ export default function HeroSection({
 
           {/* Floating trust badge */}
           {trustedBadge && (
-            <div className="lg:col-span-5 xl:col-span-6 flex justify-end items-end relative min-h-[160px] sm:min-h-[200px] lg:min-h-[400px]">
+            <div className="lg:col-span-5 xl:col-span-6 flex justify-center sm:justify-end items-end relative min-h-[140px] sm:min-h-[200px] lg:min-h-[400px]">
               <BlurIn delay={0.3}>
                 <FloatingElement amplitude={4} duration={4}>
                   <div className="bg-white rounded-2xl sm:rounded-3xl p-4 sm:p-5 shadow-[0_12px_36px_rgba(0,0,0,0.16)] border border-gray-100/90 z-20 min-w-[210px] sm:min-w-[250px] self-end mb-2 lg:mb-6">
