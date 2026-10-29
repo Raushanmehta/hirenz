@@ -11,7 +11,7 @@ export default function Home() {
   const { hero, service, about, process, experties, testimonial, blog } = site;
 
   return (
-    <main className="w-full max-w-full overflow-x-clip">
+    <main className="w-full">
       <HeroSection data={hero} />
       <ServiceSection data={service} />
       <AboutSection data={about} />

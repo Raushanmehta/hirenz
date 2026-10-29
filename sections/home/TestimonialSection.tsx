@@ -157,17 +157,17 @@ export default function TestimonialSection({
           </div>
 
           {/* Testimonial portrait image */}
-          <div className="lg:col-span-6 flex justify-center lg:justify-end pr-0 sm:pr-6 lg:pr-12 pb-8 sm:pb-10 w-full px-4 overflow-hidden lg:overflow-visible">
+          <div className="lg:col-span-6 flex justify-center lg:justify-end pb-8 sm:pb-10 w-full px-4 lg:pr-12">
             <FadeRight delay={0.25} className="w-full flex justify-center lg:justify-end">
-              <div className="relative isolate w-full max-w-[420px] sm:max-w-[450px]">
+              <div className="relative isolate w-full max-w-[320px] sm:max-w-[400px] lg:max-w-[450px] mx-auto lg:mx-0">
                 {/* Decorative background box */}
                 <div
                   aria-hidden="true"
-                  className="absolute top-12 right-0 sm:-right-8 lg:-right-10 -bottom-6 sm:-bottom-8 w-[88%] bg-[#EAE5E1] rounded-2xl sm:rounded-3xl z-0 shadow-sm"
+                  className="absolute top-4 sm:top-6 lg:top-12 -right-3 sm:-right-5 lg:-right-10 -bottom-3 sm:-bottom-5 lg:-bottom-8 w-[92%] sm:w-[90%] lg:w-[88%] bg-[#EAE5E1] rounded-2xl sm:rounded-3xl z-0 shadow-sm"
                 />
 
                 {/* Main portrait image - locked aspect ratio and smooth crossfade */}
-                <div className="relative left-0 sm:-left-6 lg:-left-10 aspect-[8/6] w-full rounded-2xl sm:rounded-3xl overflow-hidden shadow-[0_12px_36px_rgba(0,0,0,0.08)] bg-[#EAE5E1] z-10 transition-transform duration-500 hover:scale-[1.02]">
+                <div className="relative -left-3 sm:-left-5 lg:-left-10 aspect-[8/6] w-full rounded-2xl sm:rounded-3xl overflow-hidden shadow-[0_12px_36px_rgba(0,0,0,0.08)] bg-[#EAE5E1] z-10 transition-transform duration-500 hover:scale-[1.02]">
                   <AnimatePresence mode="wait">
                     <motion.div
                       key={currentIndex}
@@ -192,10 +192,10 @@ export default function TestimonialSection({
                 {/* Quote mark badge */}
                 <div
                   aria-hidden="true"
-                  className="absolute top-6 sm:top-8 right-0 sm:-right-2 lg:-right-3 w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#a84523] flex items-center justify-center text-white shadow-[0_8px_24px_rgba(168,69,35,0.32)] z-20"
+                  className="absolute top-2 sm:top-4 lg:top-8 -right-2 sm:-right-3 lg:-right-3 w-13 h-13 sm:w-16 sm:h-16 lg:w-20 lg:h-20 rounded-full bg-[#a84523] flex items-center justify-center text-white shadow-[0_8px_24px_rgba(168,69,35,0.32)] z-20"
                 >
                   <AnimatedIcon animation="pulse">
-                    <QuoteIcon className="w-7 h-7 sm:w-9 sm:h-9 text-white fill-current" />
+                    <QuoteIcon className="w-5 h-5 sm:w-7 sm:h-7 lg:w-9 lg:h-9 text-white fill-current" />
                   </AnimatedIcon>
                 </div>
               </div>

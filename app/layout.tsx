@@ -3,6 +3,7 @@ import { Poppins, Roboto } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import SmoothScroll from "@/components/common/SmoothScroll";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -33,14 +34,16 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${poppins.variable} ${roboto.variable} h-full antialiased overflow-x-hidden`}
-      suppressHydrationWarning>
-      <body className="min-h-full flex flex-col w-full max-w-full overflow-x-hidden relative" suppressHydrationWarning>
-        <Navbar />
-        {children}
-        <Footer />
+      className={`${poppins.variable} ${roboto.variable} antialiased`}
+      suppressHydrationWarning
+    >
+      <body className="min-h-screen flex flex-col w-full relative font-sans" suppressHydrationWarning>
+        <SmoothScroll>
+          <Navbar />
+          {children}
+          <Footer />
+        </SmoothScroll>
       </body>
     </html>
   );
 }
-
