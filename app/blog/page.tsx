@@ -1,5 +1,5 @@
 import BlogCard from "@/components/cards/BlogCard";
-import PageTopSection from "@/components/common/PageTopSection";
+import Breadcrumb from "@/components/common/Breadcrumb";
 import { site } from "@/data";
 
 // Page metadata
@@ -17,12 +17,12 @@ export default function BlogPage() {
   return (
     <main>
       {/* Page header */}
-      <PageTopSection
+      <Breadcrumb
         data={pageTopSection}
-        title="Blog"
+        title="Blogs"
         breadcrumbs={[
           { label: "Home", href: "/" },
-          { label: "Blog" },
+          { label: "Blogs" },
         ]}
       />
       <section className="w-full bg-white font-poppins py-8 lg:py-12">

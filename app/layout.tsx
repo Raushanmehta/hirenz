@@ -33,10 +33,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${poppins.variable} ${roboto.variable} h-full antialiased`}
-      suppressHydrationWarning
-    >
-      <body className="min-h-full flex flex-col" suppressHydrationWarning>
+      className={`${poppins.variable} ${roboto.variable} h-full antialiased overflow-x-hidden`}
+      suppressHydrationWarning>
+      <body className="min-h-full flex flex-col w-full max-w-full overflow-x-hidden relative" suppressHydrationWarning>
         <Navbar />
         {children}
         <Footer />

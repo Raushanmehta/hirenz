@@ -24,7 +24,7 @@ export default function HeroSection({
     description = "Connecting skilled professionals with forward-thinking companies. We help businesses build stronger teams and individuals create brighter futures.",
     primaryCta = { label: "Find Talent", href: "/services" },
     secondaryCta = { label: "Hire Now", href: "/contact" },
-    image = "/images/hero-banner.png",
+    image = "/images/hero-banner.webp",
     trustedBadge = {
       trustedBy: "Trusted by",
       heading: "Leading Companies",
@@ -94,7 +94,7 @@ export default function HeroSection({
                   <AnimatedButton>
                     <Link
                       href={primaryCta.href}
-                      className="group inline-flex items-center justify-center gap-2 px-6 md:px-7 py-3 md:py-3.5 rounded-lg bg-[#a84523] text-white text-[15px] sm:text-[16px] font-medium transition-all duration-200 shadow-[0_4px_14px_rgba(168,69,35,0.25)] hover:bg-[#8f381a] hover:shadow-[0_6px_20px_rgba(168,69,35,0.35)]"
+                      className="group inline-flex items-center justify-center gap-2 px-6 md:px-7 py-3 md:py-3.5 rounded-lg bg-[#a84523] text-white text-[15px] sm:text-[16px] font-medium transition-all duration-200 shadow-[0_4px_14px_rgba(168,69,35,0.25)] hover:bg-[#222222] hover:shadow-[0_6px_20px_rgba(34,34,34,0.35)]"
                     >
                       <span>{primaryCta.label}</span>
                       <ArrowRightIcon className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" />
@@ -106,7 +106,7 @@ export default function HeroSection({
                   <AnimatedButton>
                     <Link
                       href={secondaryCta.href}
-                      className="inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-3.5 rounded-lg border border-[#333333] text-[#1c1c1c] text-[15px] sm:text-[16px] font-medium transition-all duration-200 bg-white hover:bg-gray-50 hover:border-black"
+                      className="inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-3.5 rounded-lg border border-[#333333] text-[#1c1c1c] text-[15px] sm:text-[16px] font-medium transition-all duration-200 bg-white hover:bg-[#a84523] hover:border-[#a84523] hover:text-white hover:shadow-[0_4px_14px_rgba(168,69,35,0.25)]"
                     >
                       {secondaryCta.label}
                     </Link>

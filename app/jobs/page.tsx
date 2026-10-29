@@ -1,4 +1,4 @@
-import PageTopSection from "@/components/common/PageTopSection";
+import Breadcrumb from "@/components/common/Breadcrumb";
 import JobSection from "@/sections/JobSection";
 import { site } from "@/data";
 
@@ -16,7 +16,7 @@ export default function JobsPage() {
   return (
     <main>
       {/* Page header */}
-      <PageTopSection
+      <Breadcrumb
         data={pageTopSection}
         title="Jobs"
         breadcrumbs={[

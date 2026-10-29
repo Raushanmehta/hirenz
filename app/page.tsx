@@ -11,21 +11,14 @@ export default function Home() {
   const { hero, service, about, process, experties, testimonial, blog } = site;
 
   return (
-    <>
-      {/* Hero section */}
+    <main className="w-full max-w-full overflow-x-clip">
       <HeroSection data={hero} />
-      {/* Services section */}
       <ServiceSection data={service} />
-      {/* About section */}
       <AboutSection data={about} />
-      {/* Process methodology */}
       <ProcessSection data={process} />
-      {/* Industry expertise */}
       <ExpertiesSection data={experties} />
-      {/* Testimonials review */}
       <TestimonialSection data={testimonial} />
-      {/* Latest insights blog */}
       <BlogSection data={blog} />
-    </>
+    </main>
   );
 }

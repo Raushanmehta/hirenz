@@ -64,6 +64,7 @@ export type ContactData = HirenzContactData;
 export type FooterData = HirenzFooterData;
 export type NavbarData = HirenzNavbarData;
 export type PageTopSectionData = HirenzPageTopSectionData;
+export type BreadcrumbData = HirenzPageTopSectionData;
 export type ServiceDetailData = HirenzServiceDetailData;
 export type BlogDetailData = HirenzBlogDetailData;
 export type ThankyouData = HirenzThankyouData;

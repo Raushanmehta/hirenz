@@ -24,19 +24,19 @@ export default function Footer({
   data = site.footer,
 }: SectionProps<HirenzFooterData>) {
   return (
-    <footer className="w-full bg-[#141414] text-white font-poppins selection:bg-[#a84523] selection:text-white">
+    <footer className="w-full bg-[#141414] text-white font-poppins selection:bg-[#a84523] selection:text-white overflow-x-clip">
       {/* Main footer content */}
       <div className="max-w-[1420px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 pt-14 pb-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-8 xl:gap-10">
-          {/* Brand info column */}
-          <FadeLeft className="lg:col-span-4 flex flex-col justify-start">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 gap-x-6 sm:gap-x-8 gap-y-10 lg:gap-8 xl:gap-10">
+          {/* Brand info column 1*/}
+          <FadeLeft className="col-span-2 md:col-span-1 lg:col-span-4 flex flex-col justify-start">
             <Link
               href="/"
               className="inline-block transition-opacity hover:opacity-90"
             >
               <div className="relative h-13 w-52 sm:h-15 sm:w-60">
                 <Image
-                  src="/logo/logo-white.png"
+                  src="/logo/logo-white.webp"
                   alt={data.logo.alt}
                   fill
                   className="object-contain object-left"
@@ -65,9 +65,9 @@ export default function Footer({
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={s.label}
-                      className="w-12 h-12 rounded-full bg-[#242424] flex items-center justify-center text-white/90 hover:bg-[#a84523] hover:text-white transition-all duration-200"
+                      className="w-10 h-10 rounded-full bg-[#242424] flex items-center justify-center text-white/90 hover:bg-[#a84523] hover:text-white transition-all duration-200"
                     >
-                      <IconComponent className="w-6 h-6 fill-current" />
+                      <IconComponent className="w-4.5 h-4.5 fill-current" />
                     </a>
                   </AnimatedIcon>
                 );
@@ -75,8 +75,8 @@ export default function Footer({
             </div>
           </FadeLeft>
 
-          {/* Quick links column */}
-          <FadeUp delay={0.1} className="lg:col-span-2">
+          {/* Quick links column 2 */}
+          <FadeUp delay={0.1} className="col-span-1 md:col-span-1 lg:col-span-2">
             <div>
               <h3 className="text-white text-[15px] font-semibold tracking-wider uppercase font-poppins">
                 QUICK LINKS
@@ -98,8 +98,8 @@ export default function Footer({
             </ul>
           </FadeUp>
 
-          {/* Services links column */}
-          <FadeUp delay={0.2} className="lg:col-span-3">
+          {/* Services links column 3*/}
+          <FadeUp delay={0.2} className="col-span-1 md:col-span-1 lg:col-span-3">
             <div>
               <h3 className="text-white text-[15px] font-semibold tracking-wider uppercase font-poppins">
                 SERVICES
@@ -121,8 +121,8 @@ export default function Footer({
             </ul>
           </FadeUp>
 
-          {/* Contact info column */}
-          <FadeUp delay={0.3} className="lg:col-span-3">
+          {/* Contact info column 4*/}
+          <FadeUp delay={0.3} className="col-span-2 md:col-span-1 lg:col-span-3">
             <div>
               <h3 className="text-white text-[15px] font-semibold tracking-wider uppercase font-poppins">
                 GET IN TOUCH
@@ -134,8 +134,8 @@ export default function Footer({
               {/* Phone contact */}
               <div className="flex items-start gap-3.5">
                 <AnimatedIcon animation="pulse">
-                  <div className="w-12 h-12 rounded-full bg-[#a84523] flex items-center justify-center flex-shrink-0 text-white shadow-md">
-                    <PhoneIcon className="w-6 h-6" />
+                  <div className="w-10 h-10 rounded-full bg-[#a84523] flex items-center justify-center flex-shrink-0 text-white shadow-md">
+                    <PhoneIcon className="w-5 h-5" />
                   </div>
                 </AnimatedIcon>
                 <div className="flex flex-col">
@@ -152,8 +152,8 @@ export default function Footer({
               {/* Email contact */}
               <div className="flex items-start gap-3.5">
                 <AnimatedIcon animation="pulse">
-                  <div className="w-12 h-12 rounded-full bg-[#a84523] flex items-center justify-center flex-shrink-0 text-white shadow-md">
-                    <MailIcon className="w-6 h-6" />
+                  <div className="w-10 h-10 rounded-full bg-[#a84523] flex items-center justify-center flex-shrink-0 text-white shadow-md">
+                    <MailIcon className="w-5 h-5" />
                   </div>
                 </AnimatedIcon>
                 <div className="flex flex-col">
@@ -170,13 +170,13 @@ export default function Footer({
               {/* Address contact */}
               <div className="flex items-start gap-3.5">
                 <AnimatedIcon animation="pulse">
-                  <div className="w-12 h-12 rounded-full bg-[#a84523] flex items-center justify-center flex-shrink-0 text-white shadow-md">
-                    <MapPinIcon className="w-6 h-6" />
+                  <div className="w-10 h-10 rounded-full bg-[#a84523] flex items-center justify-center flex-shrink-0 text-white shadow-md">
+                    <MapPinIcon className="w-5 h-5" />
                   </div>
                 </AnimatedIcon>
                 <div className="flex flex-col">
                   <span className="text-[12px] text-[#9a9a9a]">Visit Us</span>
-                  <p className="text-[13.5px] text-gray-200 font-medium leading-relaxed">
+                  <p className="text-[14.5px] text-gray-200 font-medium leading-relaxed">
                     {data.address}
                   </p>
                 </div>
@@ -198,3 +198,5 @@ export default function Footer({
     </footer>
   );
 }
+
+

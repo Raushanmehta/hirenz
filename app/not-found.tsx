@@ -64,7 +64,7 @@ export default function NotFound() {
                             <AnimatedButton glow>
                                 <Link
                                     href={data?.homeButton?.href || "/"}
-                                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-[#a84523] hover:bg-[#8f391b] text-white text-xs sm:text-sm font-semibold transition-all duration-200 shadow-sm hover:shadow"
+                                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-[#a84523] hover:bg-[#222222] text-white text-xs sm:text-sm font-semibold transition-all duration-200 shadow-sm hover:shadow-md"
                                 >
                                     <AnimatedIcon animation="rotateHover">
                                         <HomeIcon className="w-4 h-4" />
@@ -76,7 +76,7 @@ export default function NotFound() {
                             <AnimatedButton>
                                 <Link
                                     href={data?.contactButton?.href || "/contact"}
-                                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-[#eeeeee] bg-white hover:bg-gray-50 text-[#111111] text-xs sm:text-sm font-semibold transition-all duration-200 shadow-xs hover:border-[#a84523]/40"
+                                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-[#eeeeee] bg-white hover:bg-[#a84523] hover:border-[#a84523] hover:text-white text-[#111111] text-xs sm:text-sm font-semibold transition-all duration-200 shadow-xs hover:shadow-md"
                                 >
                                     <span>{data?.contactButton?.label || "Contact Support"}</span>
                                     <span aria-hidden="true">→</span>

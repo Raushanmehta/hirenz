@@ -1,4 +1,4 @@
-import PageTopSection from "@/components/common/PageTopSection";
+import Breadcrumb from "@/components/common/Breadcrumb";
 import ContactSection from "@/sections/ContactSection";
 import { site } from "@/data";
 
@@ -16,7 +16,7 @@ export default function ContactPage() {
   return (
     <main>
       {/* Page header */}
-      <PageTopSection
+      <Breadcrumb
         data={pageTopSection}
         title="Contact Us"
         breadcrumbs={[

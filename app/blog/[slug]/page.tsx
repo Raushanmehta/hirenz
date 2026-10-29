@@ -1,5 +1,6 @@
+import { Suspense } from "react";
 import { notFound } from "next/navigation";
-import PageTopSection from "@/components/common/PageTopSection";
+import Breadcrumb from "@/components/common/Breadcrumb";
 import BlogDetailSection from "@/sections/BlogDetailSection";
 import { site } from "@/data";
 
@@ -18,33 +19,54 @@ export function generateStaticParams() {
   return Array.from(slugs).map((slug) => ({ slug }));
 }
 
-export default async function BlogDetailPage({ params }: BlogDetailRouteProps) {
-  const { slug } = await params;
+async function BlogDetailContent({ params }: BlogDetailRouteProps) {
+  const resolvedParams = await params;
+  const rawSlug = resolvedParams?.slug || "";
+  const slug = decodeURIComponent(rawSlug).toLowerCase().trim();
   const blogData = site.blog;
 
   const matchedPost = blogData?.blogPosts?.find(
     (item: any) =>
-      item.slug === slug ||
-      String(item.id) === slug ||
+      item.slug?.toLowerCase() === slug ||
+      String(item.id)?.toLowerCase() === slug ||
+      item.href === `/blog/${rawSlug}` ||
       item.href === `/blog/${slug}` ||
-      item.href?.endsWith(`/${slug}`)
+      item.href?.endsWith(`/${rawSlug}`) ||
+      item.href?.endsWith(`/${slug}`) ||
+      item.title?.toLowerCase().replace(/\s+/g, "-") === slug
   );
 
   if (!matchedPost) {
     notFound();
   }
 
+  const blogTitle = matchedPost.title || "Blog Details";
+
   return (
     <main>
-      <PageTopSection
-        title={matchedPost.title || "Blog Detail"}
+      <Breadcrumb
+        title={"Blog Details"}
         breadcrumbs={[
           { label: "Home", href: "/" },
-          { label: "Blog", href: "/blog" },
-          { label: matchedPost.title || "Blog Detail" },
+          { label: "Blogs", href: "/blog" },
+          { label: "Blog Details" },
         ]}
       />
       <BlogDetailSection slug={slug} data={matchedPost} />
     </main>
+  );
+}
+
+export default function BlogDetailPage({ params }: BlogDetailRouteProps) {
+  return (
+    <Suspense
+      fallback={
+        <div className="min-h-screen bg-white flex items-center justify-center">
+          <div className="w-8 h-8 border-3 border-[#a84523] border-t-transparent rounded-full animate-spin" />
+        </div>
+      }
+    >
+      <BlogDetailContent params={params} />
+    </Suspense>
   );
 }

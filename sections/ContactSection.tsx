@@ -81,7 +81,7 @@ export default function ContactSection({
   };
 
   return (
-    <section className={`w-full bg-[#f9fafb] font-poppins py-8 lg:py-12 ${className}`}>
+    <section className={`w-full bg-[#f9fafb] font-poppins py-8 lg:py-12 overflow-x-clip ${className}`}>
       <div className="max-w-[1420px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10">
         {/* Section header animation */}
         <FadeUp delay={0.1}>
@@ -263,7 +263,7 @@ export default function ContactSection({
                     <AnimatedButton>
                       <button
                         type="submit"
-                        className="group inline-flex items-center justify-center gap-2 px-7 py-3 rounded-lg bg-[#a84523] text-white text-[14.5px] font-medium transition-all duration-200 shadow-[0_4px_14px_rgba(168,69,35,0.25)] hover:bg-[#8f381a] hover:shadow-[0_6px_18px_rgba(168,69,35,0.35)] cursor-pointer"
+                        className="group inline-flex items-center justify-center gap-2 px-7 py-3 rounded-lg bg-[#a84523] text-white text-[14.5px] font-medium transition-all duration-200 shadow-[0_4px_14px_rgba(168,69,35,0.25)] hover:bg-[#222222] hover:shadow-[0_6px_18px_rgba(34,34,34,0.35)] cursor-pointer"
                       >
                         <span>Send Message</span>
                         <ArrowRightIcon className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" />

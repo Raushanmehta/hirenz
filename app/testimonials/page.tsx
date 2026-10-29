@@ -1,5 +1,5 @@
 import React from "react";
-import PageTopSection from "@/components/common/PageTopSection";
+import Breadcrumb from "@/components/common/Breadcrumb";
 import TestimonialCard from "@/components/cards/TestimonialCard";
 import { site } from "@/data";
 
@@ -27,7 +27,7 @@ export default function TestimonialsPage({
 
     return (
         <main>
-            <PageTopSection
+            <Breadcrumb
                 data={pageTopSection}
                 title="Testimonials"
                 breadcrumbs={[

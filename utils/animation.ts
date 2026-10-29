@@ -38,7 +38,7 @@ export const fadeDown: Variants = {
 };
 
 export const fadeLeft: Variants = {
-    hidden: { opacity: 0, x: -45 },
+    hidden: { opacity: 0, x: -20 },
     visible: (custom: { delay?: number; duration?: number } = {}) => ({
         opacity: 1,
         x: 0,
@@ -51,7 +51,7 @@ export const fadeLeft: Variants = {
 };
 
 export const fadeRight: Variants = {
-    hidden: { opacity: 0, x: 45 },
+    hidden: { opacity: 0, x: 20 },
     visible: (custom: { delay?: number; duration?: number } = {}) => ({
         opacity: 1,
         x: 0,
@@ -156,7 +156,7 @@ export const staggerItem: Variants = {
 };
 
 export const staggerItemLeft: Variants = {
-    hidden: { opacity: 0, x: -35 },
+    hidden: { opacity: 0, x: -16 },
     visible: {
         opacity: 1,
         x: 0,
@@ -165,7 +165,7 @@ export const staggerItemLeft: Variants = {
 };
 
 export const staggerItemRight: Variants = {
-    hidden: { opacity: 0, x: 35 },
+    hidden: { opacity: 0, x: 16 },
     visible: {
         opacity: 1,
         x: 0,

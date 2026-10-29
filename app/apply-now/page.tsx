@@ -1,4 +1,4 @@
-import PageTopSection from "@/components/common/PageTopSection";
+import Breadcrumb from "@/components/common/Breadcrumb";
 import ApplyNowSection from "@/sections/ApplyNowSection";
 import { site } from "@/data";
 
@@ -15,7 +15,7 @@ export default function ApplyNowPage() {
 
   return (
     <main>
-      <PageTopSection
+      <Breadcrumb
         data={pageTopSection}
         title="Apply Now"
         breadcrumbs={[

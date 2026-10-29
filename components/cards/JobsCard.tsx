@@ -97,7 +97,7 @@ export default function JobsCard({ job }: JobsCardProps) {
         <AnimatedButton>
           <Link
             href="/apply-now"
-            className="group/btn inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-[#a84523] text-white text-[12.5px] sm:text-[13px] font-medium transition-all duration-200 shadow-[0_3px_10px_rgba(168,69,35,0.2)] hover:bg-[#8f381a] hover:shadow-[0_4px_14px_rgba(168,69,35,0.3)]"
+            className="group/btn inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-[#a84523] text-white text-[12.5px] sm:text-[13px] font-medium transition-all duration-200 shadow-[0_3px_10px_rgba(168,69,35,0.2)] hover:bg-[#222222] hover:shadow-[0_4px_14px_rgba(34,34,34,0.3)]"
           >
             <span>Apply Now</span>
             <ArrowRightIcon className="w-3.5 h-3.5 transition-transform duration-200 group-hover/btn:translate-x-1" />

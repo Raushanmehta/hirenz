@@ -51,7 +51,7 @@ export default function ServiceDetailSection({
     allServices[0] ||
     ({} as ServiceItem);
 
-  const heroImage = (activeServiceData as any).heroImage || "/images/service-detail-main.png";
+  const heroImage = (activeServiceData as any).heroImage || "/images/service-detail-main.webp";
   const overviewBadge = (activeServiceData as any).overviewBadge || activeServiceData.title;
   const overviewTitle = (activeServiceData as any).overviewTitle || "Service Overview";
   const overviewTitlePart1 = (activeServiceData as any).overviewTitlePart1 || "Service";
@@ -74,12 +74,12 @@ export default function ServiceDetailSection({
       {
         title: "Talent Mapping",
         description: "In-depth market intelligence and competitor talent analysis.",
-        image: "/images/service-detail-mapping.png",
+        image: "/images/service-detail-mapping.webp",
       },
       {
         title: "Candidate Evaluation",
         description: "Multi-tier behavioral and technical competency assessments.",
-        image: "/images/service-detail-evaluation.png",
+        image: "/images/service-detail-evaluation.webp",
       },
     ];
 
@@ -95,11 +95,11 @@ export default function ServiceDetailSection({
   ];
 
   return (
-    <section className={`w-full bg-white font-poppins py-8 lg:py-12 ${className}`}>
+    <section className={`w-full bg-white font-poppins py-8 lg:py-12 overflow-x-clip ${className}`}>
       <div className="max-w-[1420px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-6 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-6 items-start">
           {/* Sidebar navigation */}
-          <div className="lg:col-span-4 space-y-4 lg:sticky lg:top-24 self-start">
+          <div className="order-2 lg:order-1 lg:col-span-4 space-y-4 lg:sticky lg:top-24 self-start">
             <FadeLeft delay={0.1}>
               {/* Vertical navigation list */}
               <div className="space-y-2">
@@ -142,7 +142,7 @@ export default function ServiceDetailSection({
           </div>
 
           {/* Service detail content */}
-          <div className="lg:col-span-8">
+          <div className="order-1 lg:order-2 lg:col-span-8">
             {/* Banner image */}
             <BlurIn delay={0.1}>
               <div className="relative w-full aspect-[16/8.5] rounded-lg overflow-hidden shadow-sm bg-gray-100">

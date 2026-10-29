@@ -16,7 +16,7 @@ export default function Navbar({
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.04)] font-poppins">
+    <header className="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.04)] font-poppins overflow-x-clip">
       <div className="max-w-[1420px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10">
         <div className="flex items-center justify-between h-20 sm:h-22">
           {/* Brand logo */}
@@ -24,9 +24,9 @@ export default function Navbar({
             href="/"
             className="flex items-center gap-2 group flex-shrink-0 transition-opacity hover:opacity-90"
           >
-            <div className="relative h-13 w-52 sm:h-15 sm:w-60">
+            <div className="relative h-12 w-44 sm:h-15 sm:w-60">
               <Image
-                src="/logo/logo-black.png"
+                src="/logo/logo-black.webp"
                 alt="HIRENZ - Connecting Talent. Creating Futures."
                 fill
                 priority
@@ -67,7 +67,7 @@ export default function Navbar({
             <AnimatedButton glow>
               <Link
                 href={data.cta.href}
-                className="group inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-[#a84523] text-white text-[15px] font-medium tracking-tight shadow-[0_4px_14px_rgba(168,69,35,0.25)] hover:bg-[#8f381a] hover:shadow-[0_6px_20px_rgba(168,69,35,0.35)] transition-all duration-200"
+                className="group inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-[#a84523] text-white text-[15px] font-medium tracking-tight shadow-[0_4px_14px_rgba(168,69,35,0.25)] hover:bg-[#222222] hover:shadow-[0_6px_20px_rgba(34,34,34,0.35)] transition-all duration-200"
               >
                 <span>{data.cta.label}</span>
                 <AnimatedIcon animation="rotateHover">
@@ -126,7 +126,7 @@ export default function Navbar({
             <Link
               href={data.cta.href}
               onClick={() => setMobileMenuOpen(false)}
-              className="flex items-center justify-center gap-2 w-full py-3 rounded-lg bg-[#a84523] text-white font-medium text-base shadow-md hover:bg-[#8f381a] transition-colors"
+              className="flex items-center justify-center gap-2 w-full py-3 rounded-lg bg-[#a84523] text-white font-medium text-base shadow-md hover:bg-[#222222] transition-colors"
             >
               <span>{data.cta.label}</span>
               <ArrowRightIcon className="w-4 h-4" />

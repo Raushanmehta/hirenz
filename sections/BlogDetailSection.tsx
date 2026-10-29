@@ -1,12 +1,10 @@
 "use client";
 
-import React from "react";
 import Image from "next/image";
 import { site, BlogPost } from "@/data";
 import {
   CalendarIcon,
   UserIcon,
-  ClockIcon,
   CheckmarkIcon,
   DynamicIcon,
 } from "@/components/icons";
@@ -35,12 +33,12 @@ export default function BlogDetailSection({
     data ||
     (slug
       ? allBlogPosts.find(
-          (p: any) =>
-            p.slug === slug ||
-            String(p.id) === slug ||
-            p.href === `/blog/${slug}` ||
-            p.href?.endsWith(`/${slug}`)
-        )
+        (p: any) =>
+          p.slug === slug ||
+          String(p.id) === slug ||
+          p.href === `/blog/${slug}` ||
+          p.href?.endsWith(`/${slug}`)
+      )
       : null) ||
     allBlogPosts[0] ||
     {};
@@ -54,8 +52,7 @@ export default function BlogDetailSection({
       ? post.author
       : `By ${post.author}`
     : "By Admin";
-  const readTime = post.readTime || "5 Min Read";
-  const heroImage = post.heroImage || post.imageSrc || "/images/service-detail-main.png";
+  const heroImage = post.heroImage || post.imageSrc || "/images/service-detail-main.webp";
   const introParagraphs: string[] = post.introParagraphs || (post.description ? [post.description] : []);
   const section1Title = post.section1Title || "Why Workplace Culture Matters";
   const section1Content = post.section1Content || post.description || "";
@@ -67,8 +64,8 @@ export default function BlogDetailSection({
   const section3Content = post.section3Content || "";
 
   return (
-    <article className={`w-full bg-white font-poppins py-8 lg:py-12 ${className}`}>
-      <div className="max-w-[1040px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10">
+    <article className={`w-full bg-white font-poppins py-8 lg:py-12 overflow-x-clip ${className}`}>
+      <div className="max-w-[1420px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10">
         {/* Article header animation */}
         <FadeUp delay={0.1}>
           <header className="text-center mb-4 sm:mb-6">
@@ -94,13 +91,6 @@ export default function BlogDetailSection({
               <span className="inline-flex items-center gap-1.5">
                 <UserIcon className="w-3.5 h-3.5 text-[#a84523]" />
                 <span>{author}</span>
-              </span>
-
-              <span className="text-gray-300">|</span>
-
-              <span className="inline-flex items-center gap-1.5">
-                <ClockIcon className="w-3.5 h-3.5 text-[#a84523]" />
-                <span>{readTime}</span>
               </span>
             </div>
           </header>

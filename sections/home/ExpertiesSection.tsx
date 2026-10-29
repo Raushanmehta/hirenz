@@ -22,7 +22,7 @@ export default function ExpertiesSection({
   } = data || {};
 
   return (
-    <section className={`w-full bg-white font-poppins py-8 lg:py-12 ${className}`}>
+    <section className={`w-full bg-white font-poppins py-8 lg:py-12 overflow-x-clip ${className}`}>
       <div className="max-w-[1420px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10">
         {/* Section header animation */}
         <FadeUp delay={0.1}>

@@ -95,7 +95,7 @@ export default function ThankyouSection({
               <AnimatedButton>
                 <Link
                   href={backBtn.href}
-                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-[#a84523] hover:bg-[#8f391b] text-white text-xs sm:text-sm font-semibold transition-all duration-200 shadow-sm hover:shadow"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-[#a84523] hover:bg-[#222222] text-white text-xs sm:text-sm font-semibold transition-all duration-200 shadow-sm hover:shadow-md"
                 >
                   <HomeIcon className="w-4 h-4" />
                   <span>{backBtn.label}</span>
@@ -105,7 +105,7 @@ export default function ThankyouSection({
               <AnimatedButton>
                 <Link
                   href={servicesBtn.href}
-                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-[#eeeeee] bg-white hover:bg-gray-50 text-[#111111] text-xs sm:text-sm font-semibold transition-all duration-200 shadow-xs hover:border-[#a84523]/40"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-[#eeeeee] bg-white hover:bg-[#a84523] hover:border-[#a84523] hover:text-white text-[#111111] text-xs sm:text-sm font-semibold transition-all duration-200 shadow-xs hover:shadow-md"
                 >
                   <span>{servicesBtn.label}</span>
                   <ChevronRightIcon className="w-4 h-4" />
@@ -115,7 +115,7 @@ export default function ThankyouSection({
               <AnimatedButton>
                 <Link
                   href={contactBtn.href}
-                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-[#a84523]/30 text-[#a84523] hover:bg-[#faebe5] text-xs sm:text-sm font-semibold transition-all duration-200"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-[#a84523] text-[#a84523] hover:bg-[#a84523] hover:text-white text-xs sm:text-sm font-semibold transition-all duration-200 shadow-xs hover:shadow-md"
                 >
                   <span>{contactBtn.label}</span>
                 </Link>

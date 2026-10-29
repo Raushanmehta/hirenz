@@ -14,6 +14,7 @@ export default function BlogSection({
   className = "",
 }: SectionProps<HirenzBlogData>) {
   const {
+    badge = "OUR RECENT WORK",
     headline = "Latest",
     highlight = "Insights & Resources",
     description = "Explore expert insights, hiring tips, and industry updates to help you build stronger teams and grow your business.",
@@ -25,8 +26,21 @@ export default function BlogSection({
     (data as any)?.sidePosts || (blogPosts.length > 1 ? blogPosts.slice(1) : []);
 
   return (
-    <section className={`w-full bg-white font-poppins py-8 lg:py-12 ${className}`}>
+    <section className={`w-full bg-white font-poppins py-8 lg:py-12 overflow-x-clip ${className}`}>
       <div className="max-w-[1420px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10">
+        <div className="text-center max-w-4xl mx-auto mb-4 sm:mb-6">
+          {/* Tagline badge */}
+          {badge && (
+            <div className="flex items-center justify-center gap-3 sm:gap-4 mb-2">
+              <span className="h-[1.5px] w-12 sm:w-16 bg-[#a84523] rounded-full" />
+              <span className="text-[12px] sm:text-[13px] font-semibold text-[#111111] tracking-[0.2em] uppercase">
+                {badge}
+              </span>
+              <span className="h-[1.5px] w-12 sm:w-16 bg-[#a84523] rounded-full" />
+            </div>
+          )}
+        </div>
+
         {/* Section header animation */}
         <FadeUp delay={0.1}>
           <div className="text-center max-w-4xl mx-auto mb-4 sm:mb-6">

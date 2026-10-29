@@ -46,7 +46,7 @@ export default function TestimonialCard({
   const rawRole = role ?? testimonial?.role ?? "HR Manager";
   const rawCompany = company ?? testimonial?.company;
   const activeImage =
-    imageSrc ?? testimonial?.imageSrc ?? "/images/avatar-rahuls.png";
+    imageSrc ?? testimonial?.imageSrc ?? "/images/avatar-rahul.webp";
   const activeRating = rating ?? testimonial?.rating ?? 5;
 
   // Split role and company

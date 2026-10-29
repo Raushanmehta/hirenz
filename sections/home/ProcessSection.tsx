@@ -25,7 +25,7 @@ export default function ProcessSection({
   } = data || {};
 
   return (
-    <section className={`w-full bg-[#111111] font-poppins py-8 lg:py-12 text-white ${className}`}>
+    <section className={`w-full bg-[#111111] font-poppins py-8 lg:py-12 text-white overflow-x-clip ${className}`}>
       <div className="max-w-[1420px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10">
         {/* Section header animation */}
         <FadeUp delay={0.1}>
@@ -63,7 +63,7 @@ export default function ProcessSection({
 
         {/* Process cards grid animation */}
         <StaggerContainer speed="normal">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 lg:gap-4 relative">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 lg:gap-8 relative">
             {steps.map((item, index) => (
               <StaggerItem key={item.step || index} variant="up">
                 <div className="relative flex flex-col h-full">
@@ -78,7 +78,7 @@ export default function ProcessSection({
                   {index < steps.length - 1 && (
                     <div
                       aria-hidden="true"
-                      className="hidden lg:flex absolute top-[114px] -right-[13px] xl:-right-[15px] z-20 text-[#a84523] items-center justify-center pointer-events-none drop-shadow-md"
+                      className="hidden lg:flex absolute top-[144px] -right-[13px] xl:-right-[26px] z-20 text-[#a84523] items-center justify-center pointer-events-none drop-shadow-md"
                     >
                       <AnimatedIcon animation="pulse">
                         <ArrowRightIcon className="w-5 h-5 text-[#a84523]" />

@@ -23,7 +23,7 @@ export default function AboutSection({
     highlight = "Dedicated Team",
     description = "Hirenz is a forward-thinking HR consultancy committed to bridging the gap between exceptional talent and ambitious organizations. Our focus is on building meaningful careers and stronger businesses.",
     image = {
-      src: "/images/about-banner.png",
+      src: "/images/about-banner.webp",
       alt: "Hirenz team collaborating on talent solutions",
     },
     stats = [
@@ -48,14 +48,14 @@ export default function AboutSection({
   const imageSrc =
     typeof image === "string"
       ? image
-      : (image as { src?: string })?.src || "/images/about-banner.png";
+      : (image as { src?: string })?.src || "/images/about-banner.webp";
   const imageAlt =
     typeof image === "object" && image && "alt" in image
       ? (image as { alt?: string }).alt || "Hirenz team collaborating on talent solutions"
       : "Hirenz team collaborating on talent solutions";
 
   return (
-    <section className={`w-full bg-white font-poppins py-8 lg:py-12 ${className}`}>
+    <section className={`w-full bg-white font-poppins py-8 lg:py-12 overflow-x-clip ${className}`}>
       <div className="max-w-[1420px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-4 xl:gap-4 items-center">
           {/* Heading and about story */}

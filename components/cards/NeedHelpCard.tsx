@@ -12,8 +12,8 @@ export interface NeedHelpCardProps {
   description?: string;
   phone?: string;
   email?: string;
-  downloadText?: string;
-  downloadHref?: string;
+  contactBtnText?: string;
+  contactBtnHref?: string;
 }
 
 export default function NeedHelpCard({
@@ -23,8 +23,8 @@ export default function NeedHelpCard({
   description = "Have questions or need guidance? Our team is here to help you find the right talent solutions.",
   phone = "+1 000000000",
   email = "info@xyz.com",
-  downloadText = "Download PDF",
-  downloadHref = "/contact",
+  contactBtnText = "Contact Us",
+  contactBtnHref = "/contact",
 }: NeedHelpCardProps) {
   return (
     <div className="relative rounded-lg bg-[#141414] p-4 sm:p-5 text-white overflow-hidden shadow-xl border border-white/5">
@@ -43,7 +43,7 @@ export default function NeedHelpCard({
 
       {/* Headline title */}
       <h3 className="relative z-10 text-[22px] sm:text-[24px] font-extrabold leading-[1.2] mb-2">
-        {titlePart1} <br />
+        {titlePart1}{" "}
         <span className="text-[#a84523]">{highlight}</span>
       </h3>
 
@@ -98,15 +98,15 @@ export default function NeedHelpCard({
       </div>
 
       {/* Download action button */}
-      {downloadText && (
+      {contactBtnText && (
         <div className="relative z-10">
           <AnimatedButton>
             <Link
-              href={downloadHref}
-              className="w-full bg-[#a84523] hover:bg-[#9a3e20] active:bg-[#8b371b] text-white py-3 rounded-lg font-bold text-[13px] sm:text-[13.5px] flex items-center justify-center gap-2 transition-all duration-200 shadow-[0_4px_16px_rgba(168,69,35,0.25)] hover:shadow-[0_6px_20px_rgba(168,69,35,0.35)]"
+              href={contactBtnHref}
+              className="w-full bg-[#a84523] hover:bg-[#222222] active:bg-black text-white py-3 rounded-lg font-bold text-[13px] sm:text-[13.5px] flex items-center justify-center gap-2 transition-all duration-200 shadow-[0_4px_16px_rgba(168,69,35,0.25)] hover:shadow-[0_6px_20px_rgba(34,34,34,0.35)]"
             >
-              <FileTextIcon className="w-4 h-4" />
-              <span>{downloadText}</span>
+
+              <span>{contactBtnText}</span>
             </Link>
           </AnimatedButton>
         </div>
